@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const InnerPageContainer = styled.div`
   padding: 0 120px;
+  width: calc(100% - 2 * 120px);
   display: flex;
   margin: auto;
   overflow: auto;

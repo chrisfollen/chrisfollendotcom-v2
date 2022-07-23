@@ -39,11 +39,20 @@ export const HomeContainer = styled(OuterPageContainer)`
 
 export const LeftColumn = styled.div`
   margin-left: 0;
-  min-width: 40vw;
+  width: 40%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   background-color: blue;
+`;
+
+export const RightColumn = styled.div`
+  margin-left: 0;
+  width: 60%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: green;
 `;
 
 export const HeadingText = styled(Heading1)`
