@@ -129,7 +129,8 @@ table {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&display=swap');
 
 body {
   font-family: 'Libre Caslon Text', serif;
