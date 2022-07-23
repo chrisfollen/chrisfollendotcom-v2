@@ -1,37 +1,27 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { Theme } from './Theme';
-import {
-  Heading1,
-  Heading2,
-  Heading3,
-  Heading4,
-  Title,
-  Subhead,
-  Category,
-  Body,
-  BodyItalic,
-  BodyBold,
-  BodyBoldItalic
-} from './Typography/style';
+import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
+import { Theme, MuiTheme } from './Theme';
+import Home from './views/Home';
+import Header from './components/Header';
 
 function App() {
   return (
     <ThemeProvider theme={Theme}>
-      <div className="App">
-        <Heading1>Hello, world!</Heading1>
-        <Heading2>Hello, world!</Heading2>
-        <Heading3>Hello, world!</Heading3>
-        <Heading4>Hello, world!</Heading4>
-        <Title>Hello, world!</Title>
-        <Subhead>Hello, world!</Subhead>
-        <Category>Hello, world!</Category>
-        <Body>Hey hey hey!</Body>
-        <BodyItalic>Hey hey hey!</BodyItalic>
-        <BodyBold>Hey hey hey!</BodyBold>
-        <BodyBoldItalic>Hey hey hey!</BodyBoldItalic>
-      </div>
+      <MuiThemeProvider theme={MuiTheme}>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            {/* <Route
+            path="*"
+            element={<NotFound handlePageLoad={handlePageLoad} />}
+          /> */}
+          </Routes>
+        </Router>
+      </MuiThemeProvider>
     </ThemeProvider>
   );
 }
