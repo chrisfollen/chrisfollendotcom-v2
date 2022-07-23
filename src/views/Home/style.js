@@ -37,6 +37,19 @@ export const HomeContainer = styled(OuterPageContainer)`
   display: flex;
 `;
 
+export const LeftColumn = styled.div`
+  margin-left: 0;
+  min-width: 40vw;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+`;
+
+export const HeadingText = styled(Heading1)`
+  padding-top: 5vh;
+`;
+
 // export const TextContainer = styled.div`
 //   padding-left: 2.5rem;
 //   padding-bottom: 2rem;

@@ -1,18 +1,15 @@
 import styled from 'styled-components';
 
 export const HeaderOuterContainer = styled.header`
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
 `;
 
 export const HeaderInnerContainer = styled.div`
-  width: 86%;
-  position: relative;
-  padding: 48px 0;
-  margin: auto;
+  padding: 48px 120px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -23,11 +20,7 @@ export const HeaderInnerContainer = styled.div`
   }
 `;
 
-export const HeaderMenuContainer = styled.div`
-  display: flex;
-  position: absolute;
-  right: 0;
-`;
+export const HeaderMenuContainer = styled.div``;
 
 export const StyledLogo = styled.img`
   width: 48px;

@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const InnerPageContainer = styled.div`
-  width: 86%;
+  padding: 0 120px;
   display: flex;
-  flex-direction: column;
   margin: auto;
   overflow: auto;
   margin-top: 147px;
