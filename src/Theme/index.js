@@ -8,7 +8,8 @@ export const Theme = {
     grey: '#4E4E4E'
   },
   breakpoints: {
-    md: '900px'
+    sm: '600px',
+    md: '905px'
   }
 };
 

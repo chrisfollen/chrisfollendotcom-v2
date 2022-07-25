@@ -54,10 +54,10 @@ export const Heading4 = styled.h4`
 
 export const Title = styled.h2`
   ${headingBase};
-  font-size: 2.375rem;
+  font-size: 3.375rem;
   line-height: 130%;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    font-size: 1.5rem;
+    font-size: 2.375rem;
     line-height: 130%;
   }
 `;

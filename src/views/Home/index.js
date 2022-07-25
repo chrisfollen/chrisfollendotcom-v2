@@ -1,6 +1,13 @@
 import React, { useEffect } from 'react';
 import { getCopy } from './copy';
-import { HeadingText, HomeContainer, ImageWrapper } from './style';
+import {
+  HeadingText,
+  HomeContainer,
+  ImageWrapper,
+  NameText,
+  StyledBodyText,
+  VerticalLine
+} from './style';
 
 export default function Home() {
   useEffect(() => {
@@ -9,12 +16,11 @@ export default function Home() {
 
   return (
     <HomeContainer>
-      {/* <HomeInnerContainer> */}
       <HeadingText dangerouslySetInnerHTML={{ __html: getCopy.heading }} />
-      {/* <RightColumn> */}
       <ImageWrapper />
-      {/* </RightColumn> */}
-      {/* </HomeInnerContainer> */}
+      <StyledBodyText dangerouslySetInnerHTML={{ __html: getCopy.aboutText }} />
+      <NameText>{getCopy.name}</NameText>
+      <VerticalLine />
     </HomeContainer>
   );
 }
