@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { OuterPageContainer } from '../../components/OuterPageContainer/style';
 import { Heading1 } from '../../Typography/style';
+import HeroImage from '../../assets/placeholder.jpg';
 
 // const slideIn = keyframes`
 //     from {
@@ -31,32 +32,61 @@ import { Heading1 } from '../../Typography/style';
 //   `;
 
 export const HomeContainer = styled(OuterPageContainer)`
-  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  position: absolute;
   display: flex;
 `;
 
-export const LeftColumn = styled.div`
-  margin-left: 0;
-  width: 40%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: blue;
-`;
+// export const HomeInnerContainer = styled(OuterPageContainer)`
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   background-color: red;
+// `;
 
 export const RightColumn = styled.div`
-  margin-left: 0;
-  width: 60%;
-  min-height: 100%;
+  width: 80%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: green;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 50;
 `;
 
 export const HeadingText = styled(Heading1)`
-  padding-top: 5vh;
+  padding-top: 30vh;
+  left: 0;
+  padding-left: 120px;
+  position: absolute;
+  z-index: 100;
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding-left: 24px;
+    padding-top: 13vh;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  background-image: url(${HeroImage});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: calc(100vh - 160px);
+  left: 22vw;
+  width: 78vw;
+  position: absolute;
+  z-index: 10;
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    left: 0;
+    width: 100%;
+    margin-top: 196px;
+    background-size: contain;
+    background-position: 0 0;
+  }
 `;
 
 // export const TextContainer = styled.div`

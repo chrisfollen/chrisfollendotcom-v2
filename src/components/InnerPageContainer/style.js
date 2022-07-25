@@ -9,6 +9,7 @@ export const InnerPageContainer = styled.div`
   margin-top: 147px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    margin-top: 90px;
+    padding: 0 24px;
+    width: calc(100% - 2 * 24px);
   }
 `;
