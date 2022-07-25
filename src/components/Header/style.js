@@ -16,7 +16,7 @@ export const HeaderInnerContainer = styled.div`
   align-items: center;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    padding: 20px 0;
+    padding: 20px 24px;
   }
 `;
 
