@@ -35,7 +35,7 @@ export const HomeContainer = styled(OuterPageContainer)`
   width: 100%;
   height: 100vh;
   display: flex;
-  position: absolute;
+  position: fixed;
   display: flex;
 `;
 

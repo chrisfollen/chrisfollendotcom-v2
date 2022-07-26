@@ -2,16 +2,22 @@ import styled from 'styled-components';
 import { Body, Title } from '../../Typography/style';
 import PlaceholderImage from '../../assets/placeholder2.jpg';
 
-export const MenuContainer = styled.nav`
-  display: flex;
-  position: absolute;
+export const MenuOuterContainer = styled.nav`
+  position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
   z-index: ${({ menuActive }) => (menuActive ? 1000 : 800)};
+`;
+
+export const MenuContainer = styled.nav`
+  display: flex;
+  width: 100vw;
+  height: 100vh;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     flex-direction: column;
+    height: calc(100vh - 72px);
   }
 `;
 
