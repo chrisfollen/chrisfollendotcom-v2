@@ -1,38 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.png';
-import { PATH_ROOT } from '../../constants/paths';
 
 import {
   MenuContainer,
   CloseButton,
   CloseButtonText,
-  StyledLogo,
-  MenuHeaderContainer
+  MenuMiddleColumn,
+  MenuLeftColumn,
+  MenuRightColumn,
+  ColumnInnerContainer
 } from './style';
 
 export default function Menu({ toggleMenu, menuActive }) {
-  //   const [menuItemsVisable, setMenuItemsVisable] = useState(false);
-
-  //   useEffect(() => {
-  //     if (menuActive) {
-  //       setTimeout(() => setMenuItemsVisable(true), 1500);
-  //     } else {
-  //       setTimeout(() => setMenuItemsVisable(false), 1000);
-  //     }
-  //   }, [menuActive]);
-
   return (
-    <MenuContainer menuActive={menuActive}>
-      <MenuHeaderContainer>
-        <Link to={PATH_ROOT}>
-          <StyledLogo src={logo} />
-        </Link>
+    <MenuContainer>
+      <MenuLeftColumn menuActive={menuActive}>
+        <ColumnInnerContainer>
+          <p>test</p>
+        </ColumnInnerContainer>
+      </MenuLeftColumn>
+      <MenuMiddleColumn menuActive={menuActive}>
+        <ColumnInnerContainer>
+          <p>test</p>
+        </ColumnInnerContainer>
+      </MenuMiddleColumn>
+      <MenuRightColumn menuActive={menuActive}>
         <CloseButton onClick={toggleMenu}>
           <CloseButtonText>&times;</CloseButtonText>
         </CloseButton>
-      </MenuHeaderContainer>
+        <ColumnInnerContainer>
+          <p>test</p>
+        </ColumnInnerContainer>
+      </MenuRightColumn>
 
       {/* <InternalLinksContainer>
                 <Link onClick={handleLinkClick} to='/dev'><InternalLink1 menuItemsVisable={menuItemsVisable} menuActive={menuActive}>dev</InternalLink1></Link>

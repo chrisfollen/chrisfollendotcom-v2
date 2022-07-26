@@ -46,10 +46,9 @@ export const HeadingText = styled(Heading1)`
   position: absolute;
   z-index: 100;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    padding-left: 48px;
+    padding-left: 24px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    padding-left: 24px;
     padding-top: 13vh;
   }
 `;

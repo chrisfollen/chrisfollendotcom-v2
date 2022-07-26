@@ -131,42 +131,63 @@ import { Body, Heading3 } from '../../Typography/style';
 
 export const MenuContainer = styled.nav`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 2000;
+  position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s ease;
-  background-color: red;
-  transform: ${({ menuActive }) =>
-    menuActive ? 'translateX(0)' : 'translateX(100%)'};
-`;
-
-export const MenuHeaderContainer = styled.div`
-  position: absolute;
-  top: 0;
-  width: calc(100% - 2 * 120px);
-  z-index: 1000;
-  padding: 48px 120px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: green;
-
+  width: 100vw;
+  height: 100vh;
+  z-index: 900;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    padding: 20px 24px;
-    width: calc(100% - 2 * 24px);
+    flex-direction: column;
   }
 `;
 
-export const StyledLogo = styled.img`
-  width: 48px;
-  height: 48px;
+// export const MenuHeaderContainer = styled.div`
+//   position: absolute;
+//   top: 0;
+//   width: calc(100% - 2 * 120px);
+//   z-index: 1000;
+//   padding: 48px 120px;
+//   margin: 0 auto;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-end;
+//   align-items: center;
+
+//   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+//     padding: 20px 24px;
+//     width: calc(100% - 2 * 24px);
+//   }
+// `;
+
+export const MenuColumnBase = styled.div`
+  flex-grow: 1;
+  transition: transform 0.8s ease;
+`;
+
+export const MenuLeftColumn = styled(MenuColumnBase)`
+  background-color: red;
+  transform: ${({ menuActive }) =>
+    menuActive ? 'translateY(0)' : 'translateY(100%)'};
+`;
+
+export const MenuMiddleColumn = styled(MenuColumnBase)`
+  background-color: blue;
+  transform: ${({ menuActive }) =>
+    menuActive ? 'translateY(0)' : 'translateY(-100%)'};
+`;
+
+export const MenuRightColumn = styled(MenuColumnBase)`
+  background-color: yellow;
+  transform: ${({ menuActive }) =>
+    menuActive ? 'translateY(0)' : 'translateY(100%)'};
+`;
+
+export const ColumnInnerContainer = styled(MenuColumnBase)`
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const InternalLinksContainer = styled.div`
@@ -190,6 +211,15 @@ export const ExternalLinksContainer = styled.div`
 export const CloseButton = styled.button.attrs({ ariaLabel: 'Close Menu' })`
   color: ${({ theme }) => theme.palette.black};
   background-color: blue;
+  position: absolute;
+  right: 0;
+  margin-right: 120px;
+  top: 0;
+  margin-top: 58px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    margin-right: 24px;
+    margin-top: 30px;
+  }
 `;
 
 export const CloseButtonText = styled(Body)`
