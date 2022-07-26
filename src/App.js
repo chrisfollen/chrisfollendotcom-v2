@@ -7,6 +7,8 @@ import { Theme, MuiTheme } from './Theme';
 import Home from './views/Home';
 import Header from './components/Header';
 import Menu from './components/Menu';
+import { PATH_ABOUT, PATH_ROOT } from './constants/paths';
+import About from './views/About';
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -26,7 +28,8 @@ function App() {
           <Header toggleMenu={toggleMenu} />
           <Menu menuActive={menuActive} toggleMenu={toggleMenu} />
           <Routes>
-            <Route path="/" exact element={<Home />} />
+            <Route path={PATH_ROOT} exact element={<Home />} />
+            <Route path={PATH_ABOUT} exact element={<About />} />
             {/* <Route
             path="*"
             element={<NotFound handlePageLoad={handlePageLoad} />}

@@ -18,7 +18,6 @@ export default function ExternalLinks({ menuActive }) {
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down('md'));
 
-  console.log('menuActive', menuActive);
   return (
     <ExternalLinksOuterContainer menuActive={menuActive}>
       <ExternalLinksInnerContainer isMobile={isMobile}>
