@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import {
   MenuContainer,
@@ -8,20 +9,31 @@ import {
   MenuMiddleColumn,
   MenuLeftColumn,
   MenuRightColumn,
-  ColumnInnerContainer
+  ColumnInnerContainer,
+  StyledLinkText
 } from './style';
+import {
+  PATH_ABOUT,
+  PATH_JOURNAL,
+  PATH_PORTFOLIO
+} from '../../constants/paths';
+import { getCopy } from './copy';
 
 export default function Menu({ toggleMenu, menuActive }) {
   return (
-    <MenuContainer>
+    <MenuContainer menuActive={menuActive}>
       <MenuLeftColumn menuActive={menuActive}>
         <ColumnInnerContainer>
-          <p>test</p>
+          <Link to={PATH_ABOUT}>
+            <StyledLinkText>{getCopy.about}</StyledLinkText>
+          </Link>
         </ColumnInnerContainer>
       </MenuLeftColumn>
       <MenuMiddleColumn menuActive={menuActive}>
         <ColumnInnerContainer>
-          <p>test</p>
+          <Link to={PATH_PORTFOLIO}>
+            <StyledLinkText>{getCopy.portfolio}</StyledLinkText>
+          </Link>
         </ColumnInnerContainer>
       </MenuMiddleColumn>
       <MenuRightColumn menuActive={menuActive}>
@@ -29,7 +41,9 @@ export default function Menu({ toggleMenu, menuActive }) {
           <CloseButtonText>&times;</CloseButtonText>
         </CloseButton>
         <ColumnInnerContainer>
-          <p>test</p>
+          <Link to={PATH_JOURNAL}>
+            <StyledLinkText>{getCopy.journal}</StyledLinkText>
+          </Link>
         </ColumnInnerContainer>
       </MenuRightColumn>
 

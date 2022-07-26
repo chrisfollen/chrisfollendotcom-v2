@@ -19,12 +19,11 @@ function App() {
     }
   };
 
-  console.log('menuActive', menuActive);
   return (
     <ThemeProvider theme={Theme}>
       <MuiThemeProvider theme={MuiTheme}>
         <Router>
-          <Header menuActive={menuActive} toggleMenu={toggleMenu} />
+          <Header toggleMenu={toggleMenu} />
           <Menu menuActive={menuActive} toggleMenu={toggleMenu} />
           <Routes>
             <Route path="/" exact element={<Home />} />
