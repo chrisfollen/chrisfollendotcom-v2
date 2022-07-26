@@ -36,14 +36,14 @@ export default function Menu({ toggleMenu, menuActive }) {
             </CloseButton>
           )}
           <ColumnInnerContainer>
-            <Link to={PATH_ABOUT}>
+            <Link to={PATH_ABOUT} onClick={toggleMenu}>
               <StyledLinkText>{getCopy.about}</StyledLinkText>
             </Link>
           </ColumnInnerContainer>
         </MenuLeftColumn>
         <MenuMiddleColumn menuActive={menuActive}>
           <ColumnInnerContainer>
-            <Link to={PATH_PORTFOLIO}>
+            <Link to={PATH_PORTFOLIO} onClick={toggleMenu}>
               <StyledLinkText>{getCopy.portfolio}</StyledLinkText>
             </Link>
           </ColumnInnerContainer>
@@ -57,7 +57,7 @@ export default function Menu({ toggleMenu, menuActive }) {
           )}
 
           <ColumnInnerContainer>
-            <Link to={PATH_JOURNAL}>
+            <Link to={PATH_JOURNAL} onClick={toggleMenu}>
               <StyledLinkText>{getCopy.journal}</StyledLinkText>
             </Link>
           </ColumnInnerContainer>
