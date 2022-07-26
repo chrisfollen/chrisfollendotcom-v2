@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { useMediaQuery, useTheme } from '@mui/material';
 
 import {
   MenuContainer,
@@ -20,9 +21,17 @@ import {
 import { getCopy } from './copy';
 
 export default function Menu({ toggleMenu, menuActive }) {
+  const muiTheme = useTheme();
+  const isMobile = useMediaQuery(muiTheme.breakpoints.down('md'));
+
   return (
     <MenuContainer menuActive={menuActive}>
       <MenuLeftColumn menuActive={menuActive}>
+        {isMobile && (
+          <CloseButton onClick={toggleMenu}>
+            <CloseButtonText>&times;</CloseButtonText>
+          </CloseButton>
+        )}
         <ColumnInnerContainer>
           <Link to={PATH_ABOUT}>
             <StyledLinkText>{getCopy.about}</StyledLinkText>
@@ -37,9 +46,12 @@ export default function Menu({ toggleMenu, menuActive }) {
         </ColumnInnerContainer>
       </MenuMiddleColumn>
       <MenuRightColumn menuActive={menuActive}>
-        <CloseButton onClick={toggleMenu}>
-          <CloseButtonText>&times;</CloseButtonText>
-        </CloseButton>
+        {!isMobile && (
+          <CloseButton onClick={toggleMenu}>
+            <CloseButtonText>&times;</CloseButtonText>
+          </CloseButton>
+        )}
+
         <ColumnInnerContainer>
           <Link to={PATH_JOURNAL}>
             <StyledLinkText>{getCopy.journal}</StyledLinkText>

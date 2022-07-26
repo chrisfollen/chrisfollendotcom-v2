@@ -27,6 +27,11 @@ export const MenuLeftColumn = styled(MenuColumnBase)`
   background-position: center;
   transform: ${({ menuActive }) =>
     menuActive ? 'translateY(0)' : 'translateY(100%)'};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    transform: ${({ menuActive }) =>
+      menuActive ? 'translateX(0)' : 'translateX(-100%)'};
+  }
 `;
 
 export const MenuMiddleColumn = styled(MenuColumnBase)`
@@ -36,6 +41,10 @@ export const MenuMiddleColumn = styled(MenuColumnBase)`
   background-position: center;
   transform: ${({ menuActive }) =>
     menuActive ? 'translateY(0)' : 'translateY(-100%)'};
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    transform: ${({ menuActive }) =>
+      menuActive ? 'translateX(0)' : 'translateX(100%)'};
+  }
 `;
 
 export const MenuRightColumn = styled(MenuColumnBase)`
@@ -45,6 +54,10 @@ export const MenuRightColumn = styled(MenuColumnBase)`
   background-position: center;
   transform: ${({ menuActive }) =>
     menuActive ? 'translateY(0)' : 'translateY(100%)'};
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    transform: ${({ menuActive }) =>
+      menuActive ? 'translateX(0)' : 'translateX(-100%)'};
+  }
 `;
 
 export const ColumnInnerContainer = styled(MenuColumnBase)`
