@@ -1,6 +1,17 @@
 import React, { useEffect } from 'react';
+import { InnerPageContainer } from '../../components/InnerPageContainer/style';
 import { OuterPageContainer } from '../../components/OuterPageContainer/style';
+import { PageColumn } from '../../components/PageColumn/style';
 import { getCopy } from './copy';
+import {
+  HeadingText,
+  HeadingTextContainer,
+  HeroContainer,
+  ImageWrapper,
+  ManifestoText,
+  QuoteContainer,
+  StyledBreakLine
+} from './style';
 
 export default function About() {
   useEffect(() => {
@@ -9,7 +20,20 @@ export default function About() {
 
   return (
     <OuterPageContainer>
-      <div style={{ height: '1500px', backgroundColor: 'blue' }} />
+      <PageColumn>
+        <HeroContainer>
+          <HeadingTextContainer>
+            <HeadingText>{getCopy.manifestoTitle}</HeadingText>
+            <StyledBreakLine />
+            <ManifestoText
+              dangerouslySetInnerHTML={{ __html: getCopy.manifestoText }}
+            />
+          </HeadingTextContainer>
+          <ImageWrapper />
+          <QuoteContainer>jhxzcad</QuoteContainer>
+        </HeroContainer>
+        <div style={{ height: '1500px', backgroundColor: 'blue' }} />
+      </PageColumn>
     </OuterPageContainer>
   );
 }
