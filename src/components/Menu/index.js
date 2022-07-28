@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useMediaQuery, useTheme } from '@mui/material';
@@ -26,8 +26,18 @@ export default function Menu({ toggleMenu, menuActive }) {
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down('md'));
 
+  const [menuVisable, setMenuVisable] = useState(false);
+
+  useEffect(() => {
+    if (menuActive) {
+      setMenuVisable(true);
+    } else {
+      setTimeout(() => setMenuVisable(false), 1000);
+    }
+  }, [menuActive]);
+
   return (
-    <MenuOuterContainer menuActive={menuActive}>
+    <MenuOuterContainer menuVisable={menuVisable}>
       <MenuContainer>
         <MenuLeftColumn menuActive={menuActive}>
           {isMobile && (

@@ -4,11 +4,11 @@ import PlaceholderImage from '../../assets/placeholder2.jpg';
 
 export const MenuOuterContainer = styled.nav`
   position: fixed;
-  left: 0;
-  top: 0;
+  left: ${({ menuVisable }) => (menuVisable ? 0 : '-500vw')};;
+  top: 0
   width: 100vw;
   height: 100vh;
-  z-index: ${({ menuActive }) => (menuActive ? 1000 : 800)};
+  z-index: 1000;
 `;
 
 export const MenuContainer = styled.nav`
