@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { OuterPageContainer } from '../../components/OuterPageContainer/style';
-import { Body, Heading2, Title } from '../../Typography/style';
+import { Body, BodyItalic, Heading2, Heading4 } from '../../Typography/style';
 import HeroImage from '../../assets/placeholder.jpg';
 
 // const slideIn = keyframes`
@@ -91,4 +90,32 @@ export const QuoteContainer = styled.div`
   width: 100vw;
   bottom: 0;
   position: absolute;
+`;
+
+export const QuoteTextContainer = styled.div`
+  width: 100vw;
+  bottom: 0;
+  height: 200px;
+  right: 120px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    right: 24px;
+  }
+`;
+
+export const QuoteText = styled(Heading4)`
+  right: 0;
+  margin: 0 36px 0 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    margin: 0;
+  }
+`;
+
+export const QuoteAuthor = styled(BodyItalic)`
+  right: 0;
 `;

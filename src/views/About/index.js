@@ -9,7 +9,10 @@ import {
   HeroContainer,
   ImageWrapper,
   ManifestoText,
+  QuoteAuthor,
   QuoteContainer,
+  QuoteText,
+  QuoteTextContainer,
   StyledBreakLine
 } from './style';
 
@@ -30,7 +33,12 @@ export default function About() {
             />
           </HeadingTextContainer>
           <ImageWrapper />
-          <QuoteContainer>jhxzcad</QuoteContainer>
+          <QuoteContainer>
+            <QuoteTextContainer>
+              <QuoteText>{getCopy.quote}</QuoteText>
+              <QuoteAuthor>{getCopy.quoteAuthor}</QuoteAuthor>
+            </QuoteTextContainer>
+          </QuoteContainer>
         </HeroContainer>
         <div style={{ height: '1500px', backgroundColor: 'blue' }} />
       </PageColumn>
