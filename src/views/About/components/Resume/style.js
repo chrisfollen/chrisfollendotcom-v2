@@ -7,11 +7,10 @@ import {
 } from '../../../../Typography/style';
 
 export const ResumeOuterContainer = styled.div`
-  width: 100%;
-  max-width: 1100px;
   margin: 160px auto;
   display: flex;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    width: 100%;
     flex-direction: column;
     margin: 120px 0;
   }
@@ -33,7 +32,6 @@ export const VerticalLine = styled.div`
 export const ResumeInnerContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin: 120px 0;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     margin: 24px 0;
@@ -43,7 +41,6 @@ export const ResumeInnerContainer = styled.div`
 export const ResumeHeroContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: 700px;
   margin-bottom: 64px;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -62,7 +59,6 @@ export const ResumeColumnsContainer = styled.div`
 export const ResumeLeftColumn = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40%;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     width: 100%;
   }
@@ -71,11 +67,11 @@ export const ResumeLeftColumn = styled.div`
 export const ResumeRightColumn = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  padding-left: 32px;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     width: 100%;
+    padding-left: 0px;
   }
-  min-height: 200px;
 `;
 
 export const ExperienceContainer = styled.div`

@@ -5,8 +5,9 @@ export const Theme = {
     black: 'rgb(10, 10, 10)',
     white: 'rgb(255, 255, 255)',
     red: '#E77777',
-    lightRed: '#E7777720',
-    grey: '#4E4E4E'
+    lightRed: '#E7777780',
+    grey: '#4E4E4E',
+    lightGrey: '#F6F6F6'
   },
   breakpoints: {
     sm: '500px',

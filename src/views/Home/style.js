@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { OuterPageContainer } from '../../components/OuterPageContainer/style';
 import { Body, Heading1, Title } from '../../Typography/style';
-import HeroImage from '../../assets/placeholder.jpg';
+import HeroImage from '../../assets/testing-12.jpg';
 
 // const slideIn = keyframes`
 //     from {

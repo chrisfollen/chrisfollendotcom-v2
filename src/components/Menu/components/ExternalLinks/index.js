@@ -1,7 +1,12 @@
 import React from 'react';
 import { useMediaQuery, useTheme } from '@mui/material';
 import PropTypes from 'prop-types';
-import placeholderLogo from '../../../../assets/logo.png';
+import emailIcon from '../../../../assets/Icons/email.png';
+import githubIcon from '../../../../assets/Icons/github.png';
+import linkedinIcon from '../../../../assets/Icons/linkedin.png';
+import emailDarkIcon from '../../../../assets/Icons/email_dark.png';
+import githubDarkIcon from '../../../../assets/Icons/github_dark.png';
+import linkedinDarkIcon from '../../../../assets/Icons/linkedin_dark.png';
 
 import {
   ExternalLinksOuterContainer,
@@ -22,13 +27,22 @@ export default function ExternalLinks({ menuActive }) {
     <ExternalLinksOuterContainer menuActive={menuActive}>
       <ExternalLinksInnerContainer isMobile={isMobile}>
         <a href={EXTERNAL_EMAIL} target="_blank" rel="noreferrer">
-          <ExternalLink src={placeholderLogo} alt="Email icon" />
+          <ExternalLink
+            src={isMobile ? emailDarkIcon : emailIcon}
+            alt="Email icon"
+          />
         </a>
         <a href={EXTERNAL_LINKEDIN} target="_blank" rel="noreferrer">
-          <ExternalLink src={placeholderLogo} alt="LinkedIn logo" />
+          <ExternalLink
+            src={isMobile ? githubDarkIcon : githubIcon}
+            alt="LinkedIn logo"
+          />
         </a>
         <a href={EXTERNAL_GITHUB} target="_blank" rel="noreferrer">
-          <ExternalLink src={placeholderLogo} alt="GitHub logo" />
+          <ExternalLink
+            src={isMobile ? linkedinDarkIcon : linkedinIcon}
+            alt="GitHub logo"
+          />
         </a>
       </ExternalLinksInnerContainer>
     </ExternalLinksOuterContainer>

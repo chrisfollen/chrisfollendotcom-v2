@@ -6,7 +6,9 @@ import {
   FooterOuterContainer,
   FooterText
 } from './style';
-import placeholderLogo from '../../assets/logo.png';
+import emailIcon from '../../assets/Icons/email_dark.png';
+import githubIcon from '../../assets/Icons/github_dark.png';
+import linkedinIcon from '../../assets/Icons/linkedin_dark.png';
 import {
   EXTERNAL_EMAIL,
   EXTERNAL_GITHUB,
@@ -27,13 +29,13 @@ export default function Footer() {
       />
       <ExternalLinksContainer>
         <a href={EXTERNAL_EMAIL} target="_blank" rel="noreferrer">
-          <ExternalLink src={placeholderLogo} alt="Email icon" />
+          <ExternalLink src={emailIcon} alt="Email icon" />
         </a>
         <a href={EXTERNAL_LINKEDIN} target="_blank" rel="noreferrer">
-          <ExternalLink src={placeholderLogo} alt="LinkedIn logo" />
+          <ExternalLink src={githubIcon} alt="LinkedIn logo" />
         </a>
         <a href={EXTERNAL_GITHUB} target="_blank" rel="noreferrer">
-          <ExternalLink src={placeholderLogo} alt="GitHub logo" />
+          <ExternalLink src={linkedinIcon} alt="GitHub logo" />
         </a>
       </ExternalLinksContainer>
     </FooterOuterContainer>

@@ -23,7 +23,7 @@ import {
   StyledBreakLine,
   StyledBreakLineNoMargin
 } from './style';
-import Placeholder2 from '../../assets/placeholder2.jpg';
+import Placeholder2 from '../../assets/testing-15.jpg';
 import { Body, Category } from '../../Typography/style';
 import HobbyCard from './components/HobbyCard';
 import Resume from './components/Resume';

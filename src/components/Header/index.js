@@ -11,7 +11,7 @@ import {
 import logo from '../../assets/logo.png';
 import { PATH_ROOT } from '../../constants/paths';
 
-export default function Header({ toggleMenu, menuThemeLight }) {
+export default function Header({ toggleMenu }) {
   return (
     <HeaderOuterContainer>
       <HeaderInnerContainer>
@@ -19,7 +19,7 @@ export default function Header({ toggleMenu, menuThemeLight }) {
           <StyledLogo src={logo} />
         </Link>
         <HeaderMenuContainer>
-          <MenuButton toggleMenu={toggleMenu} menuLightTheme={menuThemeLight} />
+          <MenuButton toggleMenu={toggleMenu} />
         </HeaderMenuContainer>
       </HeaderInnerContainer>
     </HeaderOuterContainer>
@@ -27,6 +27,5 @@ export default function Header({ toggleMenu, menuThemeLight }) {
 }
 
 Header.propTypes = {
-  toggleMenu: PropTypes.func.isRequired,
-  menuThemeLight: PropTypes.bool.isRequired
+  toggleMenu: PropTypes.func.isRequired
 };

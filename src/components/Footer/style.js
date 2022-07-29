@@ -29,7 +29,7 @@ export const ExternalLink = styled.img`
   height: 24px;
   margin: 0 18px;
   &:hover {
-    opacity: 0.6;
+    opacity: 0.5;
   }
 `;
 

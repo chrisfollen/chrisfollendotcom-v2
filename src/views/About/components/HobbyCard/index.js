@@ -27,7 +27,7 @@ export default function HobbyCard({
 }
 
 HobbyCard.propTypes = {
-  image: PropTypes.element,
+  image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   copy: PropTypes.string.isRequired,
   linkText: PropTypes.string,

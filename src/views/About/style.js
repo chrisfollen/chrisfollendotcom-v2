@@ -66,7 +66,7 @@ export const HeroImageWrapper = styled.div`
 `;
 
 export const QuoteContainer = styled.div`
-  background-color: ${({ theme }) => theme.palette.red};
+  background-color: ${({ theme }) => theme.palette.lightGrey};
   height: 280px;
   width: 100vw;
   bottom: 0;
@@ -106,7 +106,7 @@ export const QuoteAuthor = styled(BodyItalic)`
 
 export const AboutChrisContainer = styled.div`
   max-width: 800px;
-  margin: 120px auto;
+  margin: 160px auto;
   display: flex;
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     margin: 88px auto;
@@ -126,8 +126,8 @@ export const AboutChrisPhoto = styled.img`
 export const AboutChrisTextContainer = styled.div`
   width: 60%;
   z-index: 150;
-  margin-top: 120px;
-  margin-left: -160px;
+  margin-top: 90px;
+  margin-left: -130px;
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     width: 100%;
     margin-left: 0;
@@ -140,7 +140,6 @@ export const AboutChrisHeading = styled(Heading3)`
 `;
 
 export const HobbiesContainer = styled.div`
-  margin-top: 120px;
   display: flex;
   flex-direction: column;
   width: 100%;
