@@ -4,6 +4,10 @@ import { Body } from '../../../../Typography/style';
 export const MenuTextContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 export const MenuText = styled(Body)`

@@ -80,6 +80,10 @@ export const CloseButton = styled.button.attrs({ ariaLabel: 'Close Menu' })`
   margin-right: 120px;
   top: 0;
   margin-top: 58px;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     margin-right: 24px;
     margin-top: 30px;
@@ -104,4 +108,8 @@ export const ExternalLinksContainer = styled.div`
 
 export const StyledLinkText = styled(Title)`
   color: ${({ theme }) => theme.palette.white};
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;

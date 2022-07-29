@@ -143,8 +143,6 @@ a {
 }
 
 a:hover {
-  display: inline-block;
-  transform: scale(1.2);
   cursor: pointer;
 }
 
@@ -156,6 +154,5 @@ button {
 
 button:hover {
   display: inline-block;
-  transform: scale(1.2);
   cursor: pointer;
 }
