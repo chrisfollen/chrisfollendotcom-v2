@@ -34,13 +34,13 @@ export default function ExternalLinks({ menuActive }) {
         </a>
         <a href={EXTERNAL_LINKEDIN} target="_blank" rel="noreferrer">
           <ExternalLink
-            src={isMobile ? githubDarkIcon : githubIcon}
+            src={isMobile ? linkedinDarkIcon : linkedinIcon}
             alt="LinkedIn logo"
           />
         </a>
         <a href={EXTERNAL_GITHUB} target="_blank" rel="noreferrer">
           <ExternalLink
-            src={isMobile ? linkedinDarkIcon : linkedinIcon}
+            src={isMobile ? githubDarkIcon : githubIcon}
             alt="GitHub logo"
           />
         </a>

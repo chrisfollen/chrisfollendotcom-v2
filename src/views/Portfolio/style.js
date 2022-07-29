@@ -18,6 +18,10 @@ export const HeadingContainer = styled.div`
 
 export const ContactContainer = styled.div`
   width: 100%;
+  margin-bottom: 88px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    margin-bottom: 32px;
+  }
 `;
 
 export const StyledBreakLine = styled.div`

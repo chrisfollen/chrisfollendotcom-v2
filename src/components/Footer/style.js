@@ -5,11 +5,17 @@ export const FooterOuterContainer = styled.div`
   z-index: 200;
   padding: 48px 120px;
   margin: 0 auto;
+  background-color: ${({ theme }) => theme.palette.lightGrey};
+`;
+
+export const FooterInnerContainer = styled.div`
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: ${({ theme }) => theme.palette.red};
+
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     flex-direction: column-reverse;
   }
