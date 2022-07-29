@@ -17,6 +17,9 @@
     "react-hooks/exhaustive-deps": "warn",
     "import/no-duplicates": ["error"],
     "comma-dangle": ["error", "never"],
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "import/prefer-default-export": 0,
+    "react/require-default-props": 0,
+    "react/jsx-boolean-values": 0
   }
 }
