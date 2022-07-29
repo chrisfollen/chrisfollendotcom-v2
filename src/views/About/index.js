@@ -27,6 +27,7 @@ import Placeholder2 from '../../assets/placeholder2.jpg';
 import { Body, Category } from '../../Typography/style';
 import HobbyCard from './components/HobbyCard';
 import Resume from './components/Resume';
+import Footer from '../../components/Footer';
 
 export default function About() {
   useEffect(() => {
@@ -87,6 +88,7 @@ export default function About() {
           </HobbiesContainer>
           <Resume />
         </InnerPageContainer>
+        <Footer />
       </PageColumn>
     </OuterPageContainer>
   );
