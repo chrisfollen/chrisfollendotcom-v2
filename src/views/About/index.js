@@ -68,8 +68,8 @@ export default function About() {
             </HobbiesTitleContainer>
             <Grid
               container
-              columnSpacing={4}
-              rowSpacing={6}
+              columnSpacing={6}
+              rowSpacing={8}
               alignItems="stretch"
             >
               {getCopy.hobbiesAndInterests.map((hobby) => (
