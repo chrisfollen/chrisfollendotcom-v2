@@ -58,7 +58,7 @@ export default function About() {
             <AboutChrisPhoto src={ChrisPhoto} />
             <AboutChrisTextContainer>
               <AboutChrisHeading>{getCopy.aboutMeHeading}</AboutChrisHeading>
-              <Body>{getCopy.aboutMe}</Body>
+              <Body as="p">{getCopy.aboutMe}</Body>
             </AboutChrisTextContainer>
           </AboutChrisContainer>
           <HobbiesContainer>

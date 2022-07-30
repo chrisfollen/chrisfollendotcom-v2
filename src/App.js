@@ -7,12 +7,21 @@ import { Theme, MuiTheme } from './Theme';
 import Home from './views/Home';
 import Header from './components/Header';
 import Menu from './components/Menu';
-import { PATH_ABOUT, PATH_PORTFOLIO, PATH_ROOT } from './constants/paths';
+import {
+  PATH_ABOUT,
+  PATH_JOURNAL,
+  PATH_JOURNAL_30_LESSONS,
+  PATH_JOURNAL_STOIC_PRACTICES,
+  PATH_PORTFOLIO,
+  PATH_ROOT
+} from './constants/paths';
 import About from './views/About';
 import Portfolio from './views/Portfolio';
 import NotFound from './views/404';
 import Preloader from './components/Preloader';
 import LoadPage from './components/LoadPage';
+import ThirtyLessons from './views/Journal/Articles/30Lessons';
+import StoicPractices from './views/Journal/Articles/StoicPractices';
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -43,6 +52,16 @@ function App() {
             <Route path={PATH_ROOT} exact element={<Home />} />
             <Route path={PATH_ABOUT} exact element={<About />} />
             <Route path={PATH_PORTFOLIO} exact element={<Portfolio />} />
+            <Route
+              path={PATH_JOURNAL_30_LESSONS}
+              exact
+              element={<ThirtyLessons />}
+            />
+            <Route
+              path={PATH_JOURNAL_STOIC_PRACTICES}
+              exact
+              element={<StoicPractices />}
+            />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>

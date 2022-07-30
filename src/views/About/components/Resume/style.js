@@ -97,7 +97,7 @@ export const HeroHeader = styled(Heading3)`
 
 export const HeroSubheader = styled(BodyItalic)``;
 
-export const HeroBody = styled(Body)`
+export const HeroBody = styled(Body).attrs({ as: 'p' })`
   margin-bottom: 6px;
 `;
 

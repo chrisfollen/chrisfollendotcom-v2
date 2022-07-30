@@ -42,7 +42,7 @@ export const Subheader = styled(Subhead)`
   color: ${({ theme }) => theme.palette.white};
 `;
 
-export const StyledBody = styled(Body)`
+export const StyledBody = styled(Body).attrs({ as: 'p' })`
   text-align: center;
   color: ${({ theme }) => theme.palette.white};
 `;

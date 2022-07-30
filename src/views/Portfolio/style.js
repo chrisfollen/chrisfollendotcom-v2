@@ -114,7 +114,7 @@ export const ProjectTitle = styled(Category)`
   margin-bottom: 4px;
 `;
 
-export const ProjectDescription = styled(Body)`
+export const ProjectDescription = styled(Body).attrs({ as: 'p' })`
   margin-left: 24px;
 `;
 

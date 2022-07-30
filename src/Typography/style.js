@@ -62,13 +62,13 @@ export const Title = styled.h2`
   }
 `;
 
-export const Subhead = styled.h2`
+export const Subhead = styled.span`
   ${headingBase};
   font-size: 1.5rem;
   line-height: 130%;
 `;
 
-export const Category = styled.h5`
+export const Category = styled.span`
   font-family: 'Montserrat', sans-serif;
   font-size: 0.75rem;
   line-height: 20px;
@@ -77,21 +77,21 @@ export const Category = styled.h5`
   text-transform: uppercase;
 `;
 
-export const Body = styled.p`
+export const Body = styled.span`
   ${bodyBase};
 `;
 
-export const BodyItalic = styled.p`
+export const BodyItalic = styled.span`
   ${bodyBase};
   font-style: italic;
 `;
 
-export const BodyBold = styled.p`
+export const BodyBold = styled.span`
   ${bodyBase};
   font-weight: bold;
 `;
 
-export const BodyBoldItalic = styled.p`
+export const BodyBoldItalic = styled.span`
   ${bodyBase};
   font-style: italic;
   font-weight: bold;

@@ -10,14 +10,14 @@ import {
   ArticleContainer,
   ArticleImage,
   ArticleTitle,
-  ArticleNumberedList,
-  ArticleListItem,
-  BackLink
+  BackLink,
+  ArticleSubhead,
+  ArticleSection
 } from '../style';
-import HeroImage from '../../../../assets/blog/blog-1.jpg';
+import HeroImage from '../../../../assets/blog/blog-6.jpg';
 import { PATH_JOURNAL } from '../../../../constants/paths';
 
-export default function ThirtyLessons() {
+export default function StoicPractices() {
   useEffect(() => {
     document.title = getCopy.pageTitle;
   }, []);
@@ -28,13 +28,19 @@ export default function ThirtyLessons() {
         <ArticleContainer>
           <ArticleTitle>{getCopy.title}</ArticleTitle>
           <ArticleDate>{getCopy.date}</ArticleDate>
-          <ArticleImage src={HeroImage} alt="photo of author" />
-          <ArticleBody>{getCopy.body}</ArticleBody>
-          <ArticleNumberedList>
-            {getCopy.lessons.map((lesson) => (
-              <ArticleListItem key={lesson}>{lesson}</ArticleListItem>
-            ))}
-          </ArticleNumberedList>
+          <ArticleImage
+            src={HeroImage}
+            alt="photo of valley in Zion National Park"
+          />
+          <ArticleBody>{getCopy.intro}</ArticleBody>
+          {getCopy.practices.map((practice) => (
+            <ArticleSection key={practice.heading}>
+              <ArticleSubhead>{practice.heading}</ArticleSubhead>
+              <ArticleBody
+                dangerouslySetInnerHTML={{ __html: practice.body }}
+              />
+            </ArticleSection>
+          ))}
           <BackLink>
             <Link to={PATH_JOURNAL}>{getCopy.backLink}</Link>
           </BackLink>

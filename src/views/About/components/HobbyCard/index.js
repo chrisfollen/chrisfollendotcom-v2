@@ -15,7 +15,7 @@ export default function HobbyCard({
     <CardWrapper>
       <StyledCardImage src={image} />
       <Title>{title}</Title>
-      <Body>
+      <Body as="p">
         {copy}
         {linkText && linkPath && (
           <StyledBodyLink to={linkPath}>{linkText}</StyledBodyLink>
