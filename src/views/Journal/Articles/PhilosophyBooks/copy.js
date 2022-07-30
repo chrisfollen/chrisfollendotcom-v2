@@ -22,7 +22,7 @@ export const getCopy = {
       body: 'What we once built, we now buy; what we once fixed, we now throw out and replace. And these choices largely make sense from a purely economical standpoint (though surely not from an environmental one), Crawford makes a compelling case that our detachment from material reality is in fact downgrading our quality of life.<br/><br/>After graduating with a PhD in Political Philosophy, Crawford staring working at a DC think-tank where certain facts were appreciated while others went ignored. He lasted six months before he quit and opened a motorcycle repair shop. He argues that not only was his work as a mechanic more satisfying, but it was also more intellectually demanding than much of the work he had done previously in ‘white-collar’ jobs.<br/><br/>This book is an eye-opening exploration of the satisfaction of working with one’s hands, and the ways in which it is tragically devalued in 21st century America.'
     },
     {
-      heading: 'Walden by Henry David Thoreau',
+      heading: 'Walden | Henry David Thoreau',
       body: 'You’ve probably heard the story - Thoreau spent two years, two months, and two days living in a small and simple cabin he built himself on the shore of Walden Pond in Concord, Massachusetts. He did this in an attempt to ‘live deliberately’, that is, to think about what is really important and live accordingly - to live an examined life.<br/><br/>As relevant now as it was 160 years ago, this exploration of the simple life is one that we could all learn something from. Thoreau writes ‘Men have become the tools of their tools’. No kidding.'
     }
   ],
