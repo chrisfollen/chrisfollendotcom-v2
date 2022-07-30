@@ -11,6 +11,7 @@ import {
   PATH_ABOUT,
   PATH_JOURNAL,
   PATH_JOURNAL_30_LESSONS,
+  PATH_JOURNAL_BOOTCAMP_TAKEAWAYS,
   PATH_JOURNAL_DESIGN_FOR_DEVS,
   PATH_JOURNAL_PHILOSOPHY_BOOKS,
   PATH_JOURNAL_STOIC_PRACTICES,
@@ -28,6 +29,7 @@ import StoicPractices from './views/Journal/Articles/StoicPractices';
 import PhilosophyBooks from './views/Journal/Articles/PhilosophyBooks';
 import SucceedInBootcamp from './views/Journal/Articles/SucceedInBootcamp';
 import DesignForDevs from './views/Journal/Articles/DesignForDevs';
+import BootcampTakeaways from './views/Journal/Articles/BootcampTakeaways';
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -82,6 +84,11 @@ function App() {
               path={PATH_JOURNAL_DESIGN_FOR_DEVS}
               exact
               element={<DesignForDevs />}
+            />
+            <Route
+              path={PATH_JOURNAL_BOOTCAMP_TAKEAWAYS}
+              exact
+              element={<BootcampTakeaways />}
             />
             <Route path="*" element={<NotFound />} />
           </Routes>
