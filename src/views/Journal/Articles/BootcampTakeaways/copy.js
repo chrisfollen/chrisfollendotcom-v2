@@ -1,7 +1,11 @@
-export const getCopy = {
+import HeroImage from '../../../../assets/blog/blog-3.jpg';
+
+export const content = {
   pageTitle: 'Coding Bootcamp Takeaways - CHRIS FOLLEN',
   title: 'Some Software Engineering Bootcamp Takeaways (at Graduation)',
   date: 'May 13, 2021',
+  image: HeroImage,
+  imageAltText: 'empty road at Glacier National Park',
   intro:
     'Today I graduate from a full-stack software engineering bootcamp.  Here’s a bit about my experience over the past 15 weeks.',
   suggestions: [

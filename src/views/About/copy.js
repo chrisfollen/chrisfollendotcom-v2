@@ -5,7 +5,7 @@ import Woodworking from '../../assets/woodworking.jpg';
 import Stoicism from '../../assets/stoicism.jpg';
 import Reading from '../../assets/reading.jpg';
 
-export const getCopy = {
+export const content = {
   pageTitle: 'About - CHRIS FOLLEN',
   manifestoTitle: 'manifesto',
   manifestoText:

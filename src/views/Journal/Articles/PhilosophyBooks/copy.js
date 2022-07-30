@@ -1,7 +1,11 @@
-export const getCopy = {
+import HeroImage from '../../../../assets/blog/blog-2.jpg';
+
+export const content = {
   pageTitle: 'Philosophy Books - CHRIS FOLLEN',
   title: 'Five Readable Books of Philosophy',
   date: 'August 8, 2019',
+  heroImage: HeroImage,
+  imageAltText: 'ocean at sunset',
   intro:
     'We could all use a little more philosophy in our lives. Who we are, and what we believe, are of course intertwined. Here are five books on philosophy that are both thought-provoking and readable.',
   books: [

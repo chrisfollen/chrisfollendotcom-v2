@@ -19,7 +19,7 @@ import {
   PATH_JOURNAL,
   PATH_PORTFOLIO
 } from '../../constants/paths';
-import { getCopy } from './copy';
+import { content } from './copy';
 import ExternalLinks from './components/ExternalLinks';
 
 export default function Menu({ toggleMenu, menuActive }) {
@@ -47,14 +47,14 @@ export default function Menu({ toggleMenu, menuActive }) {
           )}
           <ColumnInnerContainer>
             <Link to={PATH_ABOUT} onClick={toggleMenu}>
-              <StyledLinkText>{getCopy.about}</StyledLinkText>
+              <StyledLinkText>{content.about}</StyledLinkText>
             </Link>
           </ColumnInnerContainer>
         </MenuLeftColumn>
         <MenuMiddleColumn menuActive={menuActive}>
           <ColumnInnerContainer>
             <Link to={PATH_PORTFOLIO} onClick={toggleMenu}>
-              <StyledLinkText>{getCopy.portfolio}</StyledLinkText>
+              <StyledLinkText>{content.portfolio}</StyledLinkText>
             </Link>
           </ColumnInnerContainer>
           {!isMobile && <ExternalLinks menuActive={menuActive} />}
@@ -68,7 +68,7 @@ export default function Menu({ toggleMenu, menuActive }) {
 
           <ColumnInnerContainer>
             <Link to={PATH_JOURNAL} onClick={toggleMenu}>
-              <StyledLinkText>{getCopy.journal}</StyledLinkText>
+              <StyledLinkText>{content.journal}</StyledLinkText>
             </Link>
           </ColumnInnerContainer>
         </MenuRightColumn>

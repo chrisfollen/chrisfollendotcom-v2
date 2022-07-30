@@ -1,4 +1,4 @@
-export const getCopy = {
+export const content = {
   heading: 'resume',
   name: 'Chris Follen',
   about: 'Frontend software engineer',

@@ -30,6 +30,7 @@ import PhilosophyBooks from './views/Journal/Articles/PhilosophyBooks';
 import SucceedInBootcamp from './views/Journal/Articles/SucceedInBootcamp';
 import DesignForDevs from './views/Journal/Articles/DesignForDevs';
 import BootcampTakeaways from './views/Journal/Articles/BootcampTakeaways';
+import Journal from './views/Journal';
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -60,6 +61,7 @@ function App() {
             <Route path={PATH_ROOT} exact element={<Home />} />
             <Route path={PATH_ABOUT} exact element={<About />} />
             <Route path={PATH_PORTFOLIO} exact element={<Portfolio />} />
+            <Route path={PATH_JOURNAL} exact element={<Journal />} />
             <Route
               path={PATH_JOURNAL_30_LESSONS}
               exact

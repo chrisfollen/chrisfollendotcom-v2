@@ -15,7 +15,7 @@ import {
   EXTERNAL_GITHUB,
   EXTERNAL_LINKEDIN
 } from '../../constants/externalLinks';
-import { getCopy } from './copy';
+import { content } from './copy';
 
 export default function Footer() {
   const muiTheme = useTheme();
@@ -26,7 +26,7 @@ export default function Footer() {
       <FooterInnerContainer>
         <FooterText
           dangerouslySetInnerHTML={{
-            __html: isMobile ? getCopy.mobileCopy : getCopy.copy
+            __html: isMobile ? content.mobileCopy : content.copy
           }}
         />
         <ExternalLinksContainer>

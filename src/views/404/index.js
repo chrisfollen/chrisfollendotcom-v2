@@ -7,25 +7,25 @@ import {
   StyledBody,
   StyledBodyLink
 } from './style';
-import { getCopy } from './copy';
+import { content } from './copy';
 
 export default function NotFound() {
   useEffect(() => {
-    document.title = getCopy.pageTitle;
+    document.title = content.pageTitle;
   }, []);
 
   return (
     <NotFoundContainer>
       <InnerNotFoundPageContainer>
-        <HeroText>{getCopy.header}</HeroText>
-        <Subheader>{getCopy.subheader}</Subheader>
-        <StyledBody>{getCopy.bodyCopy1}</StyledBody>
+        <HeroText>{content.header}</HeroText>
+        <Subheader>{content.subheader}</Subheader>
+        <StyledBody>{content.bodyCopy1}</StyledBody>
         <StyledBody>
-          {getCopy.bodyCopy2}
-          <StyledBodyLink to={getCopy.linkPath}>
-            {getCopy.linkText}
+          {content.bodyCopy2}
+          <StyledBodyLink to={content.linkPath}>
+            {content.linkText}
           </StyledBodyLink>
-          {getCopy.bodyCopy3}
+          {content.bodyCopy3}
         </StyledBody>
       </InnerNotFoundPageContainer>
     </NotFoundContainer>

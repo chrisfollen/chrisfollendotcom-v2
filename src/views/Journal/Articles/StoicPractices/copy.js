@@ -1,7 +1,11 @@
-export const getCopy = {
+import HeroImage from '../../../../assets/blog/blog-6.jpg';
+
+export const content = {
   pageTitle: 'Stoic Practices - CHRIS FOLLEN',
   title: 'Six Simple Stoic Practices',
   date: 'April 28, 2020',
+  heroImage: HeroImage,
+  imageAltText: 'valley in Zion National Park',
   intro:
     'A few simple practices most anyone can do to improve themselves and their life.',
   practices: [

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { InnerPageContainer } from '../../components/InnerPageContainer/style';
 import { OuterPageContainer } from '../../components/OuterPageContainer/style';
 import { PageColumn } from '../../components/PageColumn/style';
-import { getCopy } from './copy';
+import { content } from './copy';
 import {
   HeadingContainer,
   StyledBreakLine,
@@ -32,23 +32,23 @@ import { EXTERNAL_EMAIL } from '../../constants/externalLinks';
 
 export default function Portfolio() {
   useEffect(() => {
-    document.title = getCopy.pageTitle;
+    document.title = content.pageTitle;
   }, []);
 
   return (
     <OuterPageContainer>
       <PageColumn>
         <HeadingContainer>
-          <Heading3 as="h2">{getCopy.heading}</Heading3>
+          <Heading3 as="h2">{content.heading}</Heading3>
         </HeadingContainer>
         <InnerPageContainer>
           <ProjectContainer>
             <ProjectTextContainer>
-              <ProjectHeading>{getCopy.portfolio.homeward.name}</ProjectHeading>
+              <ProjectHeading>{content.portfolio.homeward.name}</ProjectHeading>
               <ProjectBreakLine />
-              <ProjectTitle>{getCopy.portfolio.homeward.title}</ProjectTitle>
+              <ProjectTitle>{content.portfolio.homeward.title}</ProjectTitle>
               <ProjectDescription>
-                {getCopy.portfolio.homeward.description}
+                {content.portfolio.homeward.description}
               </ProjectDescription>
             </ProjectTextContainer>
             <ProjectImageContainer>
@@ -64,28 +64,28 @@ export default function Portfolio() {
             </ProjectImageContainer>
             <ProjectTextContainer>
               <ProjectHeadingRight>
-                {getCopy.portfolio.chrisfollen.name}
+                {content.portfolio.chrisfollen.name}
               </ProjectHeadingRight>
               <ProjectBreakLine />
-              <ProjectTitle>{getCopy.portfolio.chrisfollen.title}</ProjectTitle>
+              <ProjectTitle>{content.portfolio.chrisfollen.title}</ProjectTitle>
               <ProjectDescription>
-                {getCopy.portfolio.chrisfollen.description}
+                {content.portfolio.chrisfollen.description}
                 <StyledBodyExternalLink
-                  href={getCopy.portfolio.chrisfollen.linkPath}
+                  href={content.portfolio.chrisfollen.linkPath}
                 >
-                  {getCopy.portfolio.chrisfollen.linkText}
+                  {content.portfolio.chrisfollen.linkText}
                 </StyledBodyExternalLink>
-                {getCopy.portfolio.chrisfollen.description2}
+                {content.portfolio.chrisfollen.description2}
               </ProjectDescription>
             </ProjectTextContainer>
           </ProjectContainerRight>
           <ContactContainer>
             <StyledBreakLine />
-            <Heading3>{getCopy.lowHeading}</Heading3>
+            <Heading3>{content.lowHeading}</Heading3>
             <LowSubheader>
-              {getCopy.lowSubheading}
+              {content.lowSubheading}
               <StyledBodyLink to={EXTERNAL_EMAIL}>
-                {getCopy.email}
+                {content.email}
               </StyledBodyLink>
             </LowSubheader>
           </ContactContainer>

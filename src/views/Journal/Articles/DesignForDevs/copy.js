@@ -1,7 +1,11 @@
-export const getCopy = {
+import HeroImage from '../../../../assets/blog/blog-5.jpg';
+
+export const content = {
   pageTitle: 'Design for Devs - CHRIS FOLLEN',
   title: 'Design Resources for Developers',
   date: 'April 30, 2021',
+  heroImage: HeroImage,
+  imageAltText: 'palm trees',
   intro:
     'A few suggestions to make your next freelance or personal project just a little bit cooler.',
   resources: [

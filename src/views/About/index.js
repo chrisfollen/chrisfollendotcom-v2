@@ -3,7 +3,7 @@ import { Grid } from '@mui/material';
 import { InnerPageContainer } from '../../components/InnerPageContainer/style';
 import { OuterPageContainer } from '../../components/OuterPageContainer/style';
 import { PageColumn } from '../../components/PageColumn/style';
-import { getCopy } from './copy';
+import { content } from './copy';
 import {
   AboutChrisContainer,
   AboutChrisHeading,
@@ -31,7 +31,7 @@ import Footer from '../../components/Footer';
 
 export default function About() {
   useEffect(() => {
-    document.title = getCopy.pageTitle;
+    document.title = content.pageTitle;
   }, []);
 
   return (
@@ -39,17 +39,17 @@ export default function About() {
       <PageColumn>
         <HeroContainer>
           <HeadingTextContainer>
-            <HeadingText>{getCopy.manifestoTitle}</HeadingText>
+            <HeadingText>{content.manifestoTitle}</HeadingText>
             <StyledBreakLine />
             <ManifestoText
-              dangerouslySetInnerHTML={{ __html: getCopy.manifestoText }}
+              dangerouslySetInnerHTML={{ __html: content.manifestoText }}
             />
           </HeadingTextContainer>
           <HeroImageWrapper />
           <QuoteContainer>
             <QuoteTextContainer>
-              <QuoteText>{getCopy.quote}</QuoteText>
-              <QuoteAuthor>{getCopy.quoteAuthor}</QuoteAuthor>
+              <QuoteText>{content.quote}</QuoteText>
+              <QuoteAuthor>{content.quoteAuthor}</QuoteAuthor>
             </QuoteTextContainer>
           </QuoteContainer>
         </HeroContainer>
@@ -57,13 +57,13 @@ export default function About() {
           <AboutChrisContainer>
             <AboutChrisPhoto src={ChrisPhoto} />
             <AboutChrisTextContainer>
-              <AboutChrisHeading>{getCopy.aboutMeHeading}</AboutChrisHeading>
-              <Body as="p">{getCopy.aboutMe}</Body>
+              <AboutChrisHeading>{content.aboutMeHeading}</AboutChrisHeading>
+              <Body as="p">{content.aboutMe}</Body>
             </AboutChrisTextContainer>
           </AboutChrisContainer>
           <HobbiesContainer>
             <HobbiesTitleContainer>
-              <Category>{getCopy.hobbiesAndInterestsHeader}</Category>
+              <Category>{content.hobbiesAndInterestsHeader}</Category>
               <StyledBreakLineNoMargin />
             </HobbiesTitleContainer>
             <Grid
@@ -72,7 +72,7 @@ export default function About() {
               rowSpacing={8}
               alignItems="stretch"
             >
-              {getCopy.hobbiesAndInterests.map((hobby) => (
+              {content.hobbiesAndInterests.map((hobby) => (
                 <Grid item key={hobby.heading} sm={4}>
                   <HobbyCard
                     image={hobby.image}

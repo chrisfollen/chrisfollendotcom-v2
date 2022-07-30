@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { OuterPageContainer } from '../../../../components/OuterPageContainer/style';
 import { PageColumn } from '../../../../components/PageColumn/style';
-import { getCopy } from './copy';
+import { content } from './copy';
 import Footer from '../../../../components/Footer';
 import {
   ArticleBody,
@@ -14,29 +14,29 @@ import {
   ArticleListItem,
   BackLink
 } from '../style';
-import HeroImage from '../../../../assets/blog/blog-1.jpg';
+
 import { PATH_JOURNAL } from '../../../../constants/paths';
 
 export default function ThirtyLessons() {
   useEffect(() => {
-    document.title = getCopy.pageTitle;
+    document.title = content.pageTitle;
   }, []);
 
   return (
     <OuterPageContainer>
       <PageColumn>
         <ArticleContainer>
-          <ArticleTitle>{getCopy.title}</ArticleTitle>
-          <ArticleDate>{getCopy.date}</ArticleDate>
-          <ArticleImage src={HeroImage} alt="author" />
-          <ArticleBody>{getCopy.body}</ArticleBody>
+          <ArticleTitle>{content.title}</ArticleTitle>
+          <ArticleDate>{content.date}</ArticleDate>
+          <ArticleImage src={content.heroImage} alt={content.imageAltText} />
+          <ArticleBody>{content.body}</ArticleBody>
           <ArticleNumberedList>
-            {getCopy.lessons.map((lesson) => (
+            {content.lessons.map((lesson) => (
               <ArticleListItem key={lesson}>{lesson}</ArticleListItem>
             ))}
           </ArticleNumberedList>
           <BackLink>
-            <Link to={PATH_JOURNAL}>{getCopy.backLink}</Link>
+            <Link to={PATH_JOURNAL}>{content.backLink}</Link>
           </BackLink>
         </ArticleContainer>
         <Footer />

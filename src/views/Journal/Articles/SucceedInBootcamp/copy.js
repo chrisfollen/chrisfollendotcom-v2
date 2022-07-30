@@ -1,7 +1,11 @@
-export const getCopy = {
+import HeroImage from '../../../../assets/blog/blog-4.jpg';
+
+export const content = {
   pageTitle: 'Succeed in Coding Bootcamp - CHRIS FOLLEN',
   title: 'How to Succeed In a Coding Bootcamp',
   date: 'April 14, 2021',
+  heroImage: HeroImage,
+  imageAltText: 'man diving into lake at Glacier National Park',
   intro:
     'Thinking about a coding bootcamp? Already been accepted? Partway through and feeling overwhelmed? Whatever the case, here are a few thoughts on how to make the most of your time (and hopefully avoid going crazy).',
   suggestions: [

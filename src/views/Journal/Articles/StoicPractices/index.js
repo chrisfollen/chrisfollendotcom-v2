@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { OuterPageContainer } from '../../../../components/OuterPageContainer/style';
 import { PageColumn } from '../../../../components/PageColumn/style';
-import { getCopy } from './copy';
+import { content } from './copy';
 import Footer from '../../../../components/Footer';
 import {
   ArticleBody,
@@ -14,23 +14,23 @@ import {
   ArticleSubhead,
   ArticleSection
 } from '../style';
-import HeroImage from '../../../../assets/blog/blog-6.jpg';
+
 import { PATH_JOURNAL } from '../../../../constants/paths';
 
 export default function StoicPractices() {
   useEffect(() => {
-    document.title = getCopy.pageTitle;
+    document.title = content.pageTitle;
   }, []);
 
   return (
     <OuterPageContainer>
       <PageColumn>
         <ArticleContainer>
-          <ArticleTitle>{getCopy.title}</ArticleTitle>
-          <ArticleDate>{getCopy.date}</ArticleDate>
-          <ArticleImage src={HeroImage} alt="valley in Zion National Park" />
-          <ArticleBody>{getCopy.intro}</ArticleBody>
-          {getCopy.practices.map((practice) => (
+          <ArticleTitle>{content.title}</ArticleTitle>
+          <ArticleDate>{content.date}</ArticleDate>
+          <ArticleImage src={content.heroImage} alt={content.imageAltText} />
+          <ArticleBody>{content.intro}</ArticleBody>
+          {content.practices.map((practice) => (
             <ArticleSection key={practice.heading}>
               <ArticleSubhead>{practice.heading}</ArticleSubhead>
               <ArticleBody
@@ -39,7 +39,7 @@ export default function StoicPractices() {
             </ArticleSection>
           ))}
           <BackLink>
-            <Link to={PATH_JOURNAL}>{getCopy.backLink}</Link>
+            <Link to={PATH_JOURNAL}>{content.backLink}</Link>
           </BackLink>
         </ArticleContainer>
         <Footer />

@@ -1,7 +1,11 @@
-export const getCopy = {
+import HeroImage from '../../../../assets/blog/blog-1.jpg';
+
+export const content = {
   pageTitle: '30 Lessons - CHRIS FOLLEN',
   title: '30 Lessons from 30 Years',
   date: 'January 12, 2018',
+  heroImage: HeroImage,
+  imageAltText: 'author',
   body: 'Today marks 30 trips around the sun for me. Here are a few thoughts and lessons I’ve picked up along the way.',
   lessons: [
     "Be extremely grateful for everything you have. No matter who you are or what you've been through, you have an incredible amount to be grateful for. Focus on all you have, not the things you lack.",
