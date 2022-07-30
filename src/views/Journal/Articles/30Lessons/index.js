@@ -29,7 +29,7 @@ export default function ThirtyLessons() {
           <ArticleTitle>{content.title}</ArticleTitle>
           <ArticleDate>{content.date}</ArticleDate>
           <ArticleImage src={content.heroImage} alt={content.imageAltText} />
-          <ArticleBody>{content.body}</ArticleBody>
+          <ArticleBody>{content.intro}</ArticleBody>
           <ArticleNumberedList>
             {content.lessons.map((lesson) => (
               <ArticleListItem key={lesson}>{lesson}</ArticleListItem>

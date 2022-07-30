@@ -14,11 +14,8 @@ export const HeadingContainer = styled.div`
   margin-bottom: 160px;
   justify-content: center;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    padding: 120px 24px 24px;
-    width: calc(100vw - 2 * 24px);
-    text-align: center;
-    margin-bottom: 32px;
-    height: 320px;
+    margin-bottom: 88px;
+    height: 300px;
   }
 `;
 
@@ -39,4 +36,8 @@ export const StyledBreakLine = styled.div`
   border-top: 1px solid ${({ theme }) => theme.palette.red};
   margin: 0 0 8px 32px;
   width: 64px;
+`;
+
+export const ArticlesContainer = styled.div`
+  margin-bottom: 160px;
 `;

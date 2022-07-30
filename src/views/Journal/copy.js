@@ -22,6 +22,7 @@ export const content = {
       title: BootcampTakeaways.title,
       path: PATH_JOURNAL_BOOTCAMP_TAKEAWAYS,
       date: BootcampTakeaways.date,
+      intro: BootcampTakeaways.intro,
       thumbnail: BootcampTakeaways.heroImage,
       thumbnailAlt: BootcampTakeaways.imageAltText
     },
@@ -29,6 +30,7 @@ export const content = {
       title: DesignForDevs.title,
       path: PATH_JOURNAL_DESIGN_FOR_DEVS,
       date: DesignForDevs.date,
+      intro: DesignForDevs.intro,
       thumbnail: DesignForDevs.heroImage,
       thumbnailAlt: DesignForDevs.imageAltText
     },
@@ -36,6 +38,7 @@ export const content = {
       title: SucceedInBootcamp.title,
       path: PATH_JOURNAL_SUCCEED_IN_BOOTCAMP,
       date: SucceedInBootcamp.date,
+      intro: SucceedInBootcamp.intro,
       thumbnail: SucceedInBootcamp.heroImage,
       thumbnailAlt: SucceedInBootcamp.imageAltText
     },
@@ -43,6 +46,7 @@ export const content = {
       title: StoicPractices.title,
       path: PATH_JOURNAL_STOIC_PRACTICES,
       date: StoicPractices.date,
+      intro: StoicPractices.intro,
       thumbnail: StoicPractices.heroImage,
       thumbnailAlt: StoicPractices.imageAltText
     },
@@ -51,6 +55,7 @@ export const content = {
       title: PhilosophyBooks.title,
       path: PATH_JOURNAL_PHILOSOPHY_BOOKS,
       date: PhilosophyBooks.date,
+      intro: PhilosophyBooks.intro,
       thumbnail: PhilosophyBooks.heroImage,
       thumbnailAlt: PhilosophyBooks.imageAltText
     },
@@ -58,6 +63,7 @@ export const content = {
       title: ThirtyLessons.title,
       path: PATH_JOURNAL_30_LESSONS,
       date: ThirtyLessons.date,
+      intro: ThirtyLessons.intro,
       thumbnail: ThirtyLessons.heroImage,
       thumbnailAlt: ThirtyLessons.imageAltText
     }
