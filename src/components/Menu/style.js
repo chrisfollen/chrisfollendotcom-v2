@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { Body, Title } from '../../Typography/style';
-import PlaceholderImage1 from '../../assets/testing-9.jpg';
-import PlaceholderImage2 from '../../assets/testing-5.jpg';
-import PlaceholderImage3 from '../../assets/testing-6.jpg';
+import Menu1 from '../../assets/menu1.jpg';
+import Menu2 from '../../assets/menu2.jpg';
+import Menu3 from '../../assets/menu3.jpg';
 
 export const MenuOuterContainer = styled.nav`
   position: fixed;
@@ -29,7 +29,7 @@ export const MenuColumnBase = styled.div`
 `;
 
 export const MenuLeftColumn = styled(MenuColumnBase)`
-  background-image: url(${PlaceholderImage1});
+  background-image: url(${Menu1});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +43,7 @@ export const MenuLeftColumn = styled(MenuColumnBase)`
 `;
 
 export const MenuMiddleColumn = styled(MenuColumnBase)`
-  background-image: url(${PlaceholderImage2});
+  background-image: url(${Menu2});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,7 +56,7 @@ export const MenuMiddleColumn = styled(MenuColumnBase)`
 `;
 
 export const MenuRightColumn = styled(MenuColumnBase)`
-  background-image: url(${PlaceholderImage3});
+  background-image: url(${Menu3});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

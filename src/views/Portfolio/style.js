@@ -65,7 +65,7 @@ export const ProjectContainer = styled.div`
   max-width: 1200px;
   display: flex;
   align-items: center;
-  margin-bottom: 160px;
+  margin-bottom: 190px;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     flex-direction: column;
     margin-bottom: 64px;

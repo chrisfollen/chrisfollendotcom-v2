@@ -22,7 +22,7 @@ import {
   StyledBodyExternalLink
 } from './style';
 
-import ChrisImage from '../../assets/testing-12.jpg';
+import HomepageImage from '../../assets/home.jpg';
 import Homeward from '../../assets/homeward.jpg';
 
 import { Heading3 } from '../../Typography/style';
@@ -58,7 +58,7 @@ export default function Portfolio() {
           <ProjectContainerRight>
             <ProjectImageContainer>
               <StyledImage
-                src={ChrisImage}
+                src={HomepageImage}
                 style={{ transform: 'scaleX(-1)' }}
               />
             </ProjectImageContainer>

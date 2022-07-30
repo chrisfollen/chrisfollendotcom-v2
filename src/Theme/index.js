@@ -7,7 +7,7 @@ export const Theme = {
     red: '#E77777',
     lightRed: '#E7777780',
     grey: '#4E4E4E',
-    lightGrey: '#F6F6F6'
+    lightGrey: '#F1F1F1'
   },
   breakpoints: {
     sm: '500px',

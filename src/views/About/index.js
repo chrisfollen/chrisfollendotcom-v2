@@ -23,7 +23,7 @@ import {
   StyledBreakLine,
   StyledBreakLineNoMargin
 } from './style';
-import Placeholder2 from '../../assets/testing-15.jpg';
+import ChrisPhoto from '../../assets/chris.jpg';
 import { Body, Category } from '../../Typography/style';
 import HobbyCard from './components/HobbyCard';
 import Resume from './components/Resume';
@@ -55,7 +55,7 @@ export default function About() {
         </HeroContainer>
         <InnerPageContainer>
           <AboutChrisContainer>
-            <AboutChrisPhoto src={Placeholder2} />
+            <AboutChrisPhoto src={ChrisPhoto} />
             <AboutChrisTextContainer>
               <AboutChrisHeading>{getCopy.aboutMeHeading}</AboutChrisHeading>
               <Body>{getCopy.aboutMe}</Body>

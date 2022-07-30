@@ -1,4 +1,9 @@
-import PlaceholderImage from '../../assets/placeholder.jpg';
+import Photography from '../../assets/photography.jpg';
+import Architecture from '../../assets/architecture.jpg';
+import Surfing from '../../assets/surfing.jpg';
+import Woodworking from '../../assets/woodworking.jpg';
+import Stoicism from '../../assets/stoicism.jpg';
+import Reading from '../../assets/reading.jpg';
 
 export const getCopy = {
   pageTitle: 'About - CHRIS FOLLEN',
@@ -19,27 +24,23 @@ export const getCopy = {
       linkPath: '/photo',
       body2:
         ' and creating tangible records of my experiences via both physical prints and coffee table books.',
-      image: PlaceholderImage
+      image: Photography
     },
-    {
-      heading: 'architecture',
-      body: 'I appreciate thoughtfully-designed spaces, and am particularly intrigued by functional layouts that make efficient use of space and resources.',
-      image: PlaceholderImage
-    },
+
     {
       heading: 'surfing',
       body: "It's mindfulness, physical exercise, and time spent in nature all wrapped up in one. It's also hard work for a limited reward and I very much appreciate that aspect.",
-      image: PlaceholderImage
+      image: Surfing
     },
     {
       heading: 'woodworking',
       body: "Using your hands and tools to shape a piece of wood into (hopefully) something beautiful and functional is at once immensely satisfying and incredibly frustrating. It's a welcome opportunity to confront material reality and feel some agency.",
-      image: PlaceholderImage
+      image: Woodworking
     },
     {
       heading: 'stoicism',
       body: "It's not about what happends to you. It's about how you react to it. Choose wisely.",
-      image: PlaceholderImage
+      image: Stoicism
     },
     {
       heading: 'reading',
@@ -47,7 +48,12 @@ export const getCopy = {
       linkText: 'here',
       linkPath: '/read',
       body2: '.',
-      image: PlaceholderImage
+      image: Reading
+    },
+    {
+      heading: 'architecture',
+      body: 'I appreciate thoughtfully-designed spaces, and am particularly intrigued by functional layouts that make efficient use of space and resources.',
+      image: Architecture
     }
   ]
 };

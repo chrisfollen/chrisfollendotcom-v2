@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Body, Heading2, Subhead } from '../../Typography/style';
-import HeroImage from '../../assets/testing-14.jpg';
+import HeroImage from '../../assets/404.jpg';
 
 export const NotFoundContainer = styled.div`
   position: fixed;

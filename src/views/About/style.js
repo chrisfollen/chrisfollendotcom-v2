@@ -6,7 +6,7 @@ import {
   Heading3,
   Heading4
 } from '../../Typography/style';
-import HeroImage from '../../assets/placeholder.jpg';
+import HeroImage from '../../assets/about.jpg';
 
 export const HeroContainer = styled.div`
   width: 100vw;
@@ -126,8 +126,8 @@ export const AboutChrisPhoto = styled.img`
 export const AboutChrisTextContainer = styled.div`
   width: 60%;
   z-index: 150;
-  margin-top: 90px;
-  margin-left: -130px;
+  margin-top: 70px;
+  margin-left: -110px;
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     width: 100%;
     margin-left: 0;
