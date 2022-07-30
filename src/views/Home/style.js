@@ -1,35 +1,7 @@
 import styled from 'styled-components';
 import { OuterPageContainer } from '../../components/OuterPageContainer/style';
 import { Body, Heading1, Title } from '../../Typography/style';
-import HeroImage from '../../assets/testing-12.jpg';
-
-// const slideIn = keyframes`
-//     from {
-//       margin-left: 100%;
-//       width: 300%;
-//       opacity: 0;
-//     }
-
-//     to {
-//       margin-left: 0%;
-//       width: 100%;
-//       opacity: 1;
-//     }
-//   `;
-
-// const slideInSmall = keyframes`
-//     from {
-//       margin-left: 100%;
-//       width: 300%;
-//       opacity: 0;
-//     }
-
-//     to {
-//       margin-left: 0%;
-//       width: 100%;
-//       opacity: 1;
-//     }
-//   `;
+import HeroImage from '../../assets/home.jpg';
 
 export const HomeContainer = styled(OuterPageContainer)`
   width: 100%;

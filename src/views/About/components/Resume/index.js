@@ -13,10 +13,11 @@ import {
   ResumeOuterContainer,
   ResumeRightColumn,
   ResumeTitle,
+  StyledBody,
   StyledBreakLine,
   VerticalLine
 } from './style';
-import { getCopy } from './copy';
+import { content } from './copy';
 import { Body, BodyBold, BodyItalic } from '../../../../Typography/style';
 
 export default function Resume() {
@@ -25,58 +26,58 @@ export default function Resume() {
 
   return (
     <ResumeOuterContainer>
-      <ResumeTitle>{getCopy.heading}</ResumeTitle>
+      <ResumeTitle>{content.heading}</ResumeTitle>
       {isMobile ? <StyledBreakLine /> : <VerticalLine />}
       <ResumeInnerContainer>
         <ResumeHeroContainer>
-          <HeroHeader>{getCopy.name}</HeroHeader>
-          <HeroSubheader>{getCopy.about}</HeroSubheader>
-          <HeroBody>{getCopy.summary}</HeroBody>
+          <HeroHeader>{content.name}</HeroHeader>
+          <HeroSubheader>{content.about}</HeroSubheader>
+          <HeroBody>{content.summary}</HeroBody>
         </ResumeHeroContainer>
         <ResumeColumnsContainer>
           <ResumeLeftColumn>
-            <ExperienceHeader>{getCopy.experienceHeading}</ExperienceHeader>
-            {getCopy.experiences.map((experience) => (
+            <ExperienceHeader>{content.experienceHeading}</ExperienceHeader>
+            {content.experiences.map((experience) => (
               <ExperienceContainer key={experience.company}>
                 <BodyBold>{experience.company}</BodyBold>
-                <Body>
+                <StyledBody>
                   {experience.role} |{' '}
                   <BodyItalic as="span">{experience.years}</BodyItalic>
-                </Body>
+                </StyledBody>
                 {experience.role2 && (
-                  <Body>
+                  <StyledBody>
                     {experience.role2} |{' '}
                     <BodyItalic as="span">{experience.years2}</BodyItalic>
-                  </Body>
+                  </StyledBody>
                 )}
               </ExperienceContainer>
             ))}
           </ResumeLeftColumn>
           <ResumeRightColumn>
-            <ExperienceHeader>{getCopy.educationHeading}</ExperienceHeader>
-            {getCopy.education.map((education) => (
+            <ExperienceHeader>{content.educationHeading}</ExperienceHeader>
+            {content.education.map((education) => (
               <ExperienceContainer key={education.school}>
                 <BodyBold>{education.school}</BodyBold>
-                <Body>
+                <StyledBody>
                   {education.degree} |{' '}
                   {education.gpa && <Body as="span">{education.gpa} | </Body>}
                   <BodyItalic as="span">{education.years}</BodyItalic>
-                </Body>
+                </StyledBody>
                 {education.degree2 && (
-                  <Body>
+                  <StyledBody>
                     {education.degree2} |{' '}
                     {education.gpa2 && (
                       <Body as="span">{education.gpa2} | </Body>
                     )}
                     <BodyItalic as="span">{education.years2}</BodyItalic>
-                  </Body>
+                  </StyledBody>
                 )}
               </ExperienceContainer>
             ))}
             <ExperienceContainer>
-              <ExperienceHeader>{getCopy.skillsHeading}</ExperienceHeader>
+              <ExperienceHeader>{content.skillsHeading}</ExperienceHeader>
               <ExperienceContainer>
-                <Body>{getCopy.skills}</Body>
+                <Body>{content.skills}</Body>
               </ExperienceContainer>
             </ExperienceContainer>
           </ResumeRightColumn>

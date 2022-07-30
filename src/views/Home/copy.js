@@ -1,4 +1,4 @@
-export const getCopy = {
+export const content = {
   pageTitle: 'CHRIS FOLLEN',
   heading: 'software <br/> engineer',
   name: 'Chris Follen',

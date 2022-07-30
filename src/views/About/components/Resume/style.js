@@ -97,7 +97,7 @@ export const HeroHeader = styled(Heading3)`
 
 export const HeroSubheader = styled(BodyItalic)``;
 
-export const HeroBody = styled(Body)`
+export const HeroBody = styled(Body).attrs({ as: 'p' })`
   margin-bottom: 6px;
 `;
 
@@ -105,4 +105,8 @@ export const StyledBreakLine = styled.div`
   border-top: 1px solid ${({ theme }) => theme.palette.red};
   width: 100%;
   margin: 6px 0;
+`;
+
+export const StyledBody = styled(Body)`
+  display: block;
 `;

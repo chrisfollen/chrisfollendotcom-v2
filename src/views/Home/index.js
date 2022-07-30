@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { getCopy } from './copy';
+import { content } from './copy';
 import {
   HeadingText,
   HomeContainer,
@@ -11,15 +11,15 @@ import {
 
 export default function Home() {
   useEffect(() => {
-    document.title = getCopy.pageTitle;
+    document.title = content.pageTitle;
   }, []);
 
   return (
     <HomeContainer>
-      <HeadingText dangerouslySetInnerHTML={{ __html: getCopy.heading }} />
+      <HeadingText dangerouslySetInnerHTML={{ __html: content.heading }} />
       <ImageWrapper />
-      <StyledBodyText dangerouslySetInnerHTML={{ __html: getCopy.aboutText }} />
-      <NameText>{getCopy.name}</NameText>
+      <StyledBodyText dangerouslySetInnerHTML={{ __html: content.aboutText }} />
+      <NameText>{content.name}</NameText>
       <VerticalLine />
     </HomeContainer>
   );

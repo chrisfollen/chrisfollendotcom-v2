@@ -1,4 +1,4 @@
-export const getCopy = {
+export const content = {
   pageTitle: 'Portfolio - CHRIS FOLLEN',
   heading: 'a selection of my work',
   portfolio: {

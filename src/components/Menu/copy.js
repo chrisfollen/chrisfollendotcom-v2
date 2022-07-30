@@ -1,4 +1,4 @@
-export const getCopy = {
+export const content = {
   about: 'about',
   portfolio: 'portfolio',
   journal: 'journal'

@@ -9,7 +9,7 @@ export const ExternalLinksOuterContainer = styled.div`
   align-items: center;
   padding: 40px 0;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    background-color: ${({ theme }) => theme.palette.red};
+    background-color: ${({ theme }) => theme.palette.lightGrey};
     transition: transform 0.8s ease;
     transform: ${({ menuActive }) =>
       menuActive ? 'translateY(0)' : 'translateY(100%)'};
@@ -29,6 +29,7 @@ export const ExternalLink = styled.img`
   height: 24px;
   margin: 0 18px;
   &:hover {
+    transition: 0.3s all ease;
     opacity: 0.5;
   }
 `;

@@ -18,6 +18,10 @@ export const HeadingContainer = styled.div`
 
 export const ContactContainer = styled.div`
   width: 100%;
+  margin-bottom: 88px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    margin-bottom: 32px;
+  }
 `;
 
 export const StyledBreakLine = styled.div`
@@ -61,7 +65,7 @@ export const ProjectContainer = styled.div`
   max-width: 1200px;
   display: flex;
   align-items: center;
-  margin-bottom: 160px;
+  margin-bottom: 190px;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     flex-direction: column;
     margin-bottom: 64px;
@@ -110,7 +114,7 @@ export const ProjectTitle = styled(Category)`
   margin-bottom: 4px;
 `;
 
-export const ProjectDescription = styled(Body)`
+export const ProjectDescription = styled(Body).attrs({ as: 'p' })`
   margin-left: 24px;
 `;
 

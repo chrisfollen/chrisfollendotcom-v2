@@ -1,4 +1,4 @@
-export const getCopy = {
+export const content = {
   pageTitle: '404 - CHRIS FOLLEN',
   header: '4L04A',
   subheader: "It looks like you've arrived in the middle of nowhere.",
