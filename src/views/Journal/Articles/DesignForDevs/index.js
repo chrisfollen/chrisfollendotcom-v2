@@ -12,12 +12,13 @@ import {
   ArticleTitle,
   BackLink,
   ArticleSubhead,
-  ArticleSection
+  ArticleSection,
+  StyledBodyExternalLink
 } from '../style';
-import HeroImage from '../../../../assets/blog/blog-6.jpg';
+import HeroImage from '../../../../assets/blog/blog-5.jpg';
 import { PATH_JOURNAL } from '../../../../constants/paths';
 
-export default function StoicPractices() {
+export default function DesignForDevs() {
   useEffect(() => {
     document.title = getCopy.pageTitle;
   }, []);
@@ -28,13 +29,17 @@ export default function StoicPractices() {
         <ArticleContainer>
           <ArticleTitle>{getCopy.title}</ArticleTitle>
           <ArticleDate>{getCopy.date}</ArticleDate>
-          <ArticleImage src={HeroImage} alt="valley in Zion National Park" />
+          <ArticleImage src={HeroImage} alt="palm trees" />
           <ArticleBody>{getCopy.intro}</ArticleBody>
-          {getCopy.practices.map((practice) => (
-            <ArticleSection key={practice.heading}>
-              <ArticleSubhead>{practice.heading}</ArticleSubhead>
+          {getCopy.resources.map((resource) => (
+            <ArticleSection key={resource.heading}>
+              <ArticleSubhead>
+                <StyledBodyExternalLink href={resource.link}>
+                  {resource.heading}
+                </StyledBodyExternalLink>
+              </ArticleSubhead>
               <ArticleBody
-                dangerouslySetInnerHTML={{ __html: practice.body }}
+                dangerouslySetInnerHTML={{ __html: resource.body }}
               />
             </ArticleSection>
           ))}

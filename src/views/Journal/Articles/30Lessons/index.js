@@ -28,7 +28,7 @@ export default function ThirtyLessons() {
         <ArticleContainer>
           <ArticleTitle>{getCopy.title}</ArticleTitle>
           <ArticleDate>{getCopy.date}</ArticleDate>
-          <ArticleImage src={HeroImage} alt="photo of author" />
+          <ArticleImage src={HeroImage} alt="author" />
           <ArticleBody>{getCopy.body}</ArticleBody>
           <ArticleNumberedList>
             {getCopy.lessons.map((lesson) => (

@@ -28,7 +28,7 @@ export default function PhilosophyBooks() {
         <ArticleContainer>
           <ArticleTitle>{getCopy.title}</ArticleTitle>
           <ArticleDate>{getCopy.date}</ArticleDate>
-          <ArticleImage src={HeroImage} alt="photo of ocean at sunset" />
+          <ArticleImage src={HeroImage} alt="ocean at sunset" />
           <ArticleBody>{getCopy.intro}</ArticleBody>
           {getCopy.books.map((book) => (
             <ArticleSection key={book.heading}>

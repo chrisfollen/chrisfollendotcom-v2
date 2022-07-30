@@ -57,7 +57,10 @@ export const ArticleSection = styled.div`
   width: 100%;
 `;
 
-export const StyledBodyExternalLink = styled.a`
+export const StyledBodyExternalLink = styled.a.attrs({
+  target: '_blank',
+  rel: 'noreferrer'
+})`
   padding: 2px 0;
   border-bottom: 2px solid ${({ theme }) => theme.palette.red};
   transition: all 0.3s ease;
