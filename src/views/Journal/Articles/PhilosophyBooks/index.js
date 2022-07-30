@@ -1,0 +1,47 @@
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { OuterPageContainer } from '../../../../components/OuterPageContainer/style';
+import { PageColumn } from '../../../../components/PageColumn/style';
+import { getCopy } from './copy';
+import Footer from '../../../../components/Footer';
+import {
+  ArticleBody,
+  ArticleDate,
+  ArticleContainer,
+  ArticleImage,
+  ArticleTitle,
+  BackLink,
+  ArticleSubhead,
+  ArticleSection
+} from '../style';
+import HeroImage from '../../../../assets/blog/blog-2.jpg';
+import { PATH_JOURNAL } from '../../../../constants/paths';
+
+export default function PhilosophyBooks() {
+  useEffect(() => {
+    document.title = getCopy.pageTitle;
+  }, []);
+
+  return (
+    <OuterPageContainer>
+      <PageColumn>
+        <ArticleContainer>
+          <ArticleTitle>{getCopy.title}</ArticleTitle>
+          <ArticleDate>{getCopy.date}</ArticleDate>
+          <ArticleImage src={HeroImage} alt="photo of ocean at sunset" />
+          <ArticleBody>{getCopy.intro}</ArticleBody>
+          {getCopy.books.map((book) => (
+            <ArticleSection key={book.heading}>
+              <ArticleSubhead>{book.heading}</ArticleSubhead>
+              <ArticleBody dangerouslySetInnerHTML={{ __html: book.body }} />
+            </ArticleSection>
+          ))}
+          <BackLink>
+            <Link to={PATH_JOURNAL}>{getCopy.backLink}</Link>
+          </BackLink>
+        </ArticleContainer>
+        <Footer />
+      </PageColumn>
+    </OuterPageContainer>
+  );
+}

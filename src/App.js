@@ -11,6 +11,7 @@ import {
   PATH_ABOUT,
   PATH_JOURNAL,
   PATH_JOURNAL_30_LESSONS,
+  PATH_JOURNAL_PHILOSOPHY_BOOKS,
   PATH_JOURNAL_STOIC_PRACTICES,
   PATH_PORTFOLIO,
   PATH_ROOT
@@ -22,6 +23,7 @@ import Preloader from './components/Preloader';
 import LoadPage from './components/LoadPage';
 import ThirtyLessons from './views/Journal/Articles/30Lessons';
 import StoicPractices from './views/Journal/Articles/StoicPractices';
+import PhilosophyBooks from './views/Journal/Articles/PhilosophyBooks';
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -56,6 +58,11 @@ function App() {
               path={PATH_JOURNAL_30_LESSONS}
               exact
               element={<ThirtyLessons />}
+            />
+            <Route
+              path={PATH_JOURNAL_PHILOSOPHY_BOOKS}
+              exact
+              element={<PhilosophyBooks />}
             />
             <Route
               path={PATH_JOURNAL_STOIC_PRACTICES}
