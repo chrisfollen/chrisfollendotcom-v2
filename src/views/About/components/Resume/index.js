@@ -13,6 +13,7 @@ import {
   ResumeOuterContainer,
   ResumeRightColumn,
   ResumeTitle,
+  StyledBody,
   StyledBreakLine,
   VerticalLine
 } from './style';
@@ -39,15 +40,15 @@ export default function Resume() {
             {content.experiences.map((experience) => (
               <ExperienceContainer key={experience.company}>
                 <BodyBold>{experience.company}</BodyBold>
-                <Body>
+                <StyledBody>
                   {experience.role} |{' '}
                   <BodyItalic as="span">{experience.years}</BodyItalic>
-                </Body>
+                </StyledBody>
                 {experience.role2 && (
-                  <Body>
+                  <StyledBody>
                     {experience.role2} |{' '}
                     <BodyItalic as="span">{experience.years2}</BodyItalic>
-                  </Body>
+                  </StyledBody>
                 )}
               </ExperienceContainer>
             ))}
@@ -57,19 +58,19 @@ export default function Resume() {
             {content.education.map((education) => (
               <ExperienceContainer key={education.school}>
                 <BodyBold>{education.school}</BodyBold>
-                <Body>
+                <StyledBody>
                   {education.degree} |{' '}
                   {education.gpa && <Body as="span">{education.gpa} | </Body>}
                   <BodyItalic as="span">{education.years}</BodyItalic>
-                </Body>
+                </StyledBody>
                 {education.degree2 && (
-                  <Body>
+                  <StyledBody>
                     {education.degree2} |{' '}
                     {education.gpa2 && (
                       <Body as="span">{education.gpa2} | </Body>
                     )}
                     <BodyItalic as="span">{education.years2}</BodyItalic>
-                  </Body>
+                  </StyledBody>
                 )}
               </ExperienceContainer>
             ))}

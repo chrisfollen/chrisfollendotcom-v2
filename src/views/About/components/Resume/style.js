@@ -106,3 +106,7 @@ export const StyledBreakLine = styled.div`
   width: 100%;
   margin: 6px 0;
 `;
+
+export const StyledBody = styled(Body)`
+  display: block;
+`;

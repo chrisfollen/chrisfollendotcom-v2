@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Category, Subhead } from '../../../../Typography/style';
 
 export const CardWrapper = styled.div`
@@ -8,6 +8,11 @@ export const CardWrapper = styled.div`
   flex-direction: column;
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     width: 100%;
+  }
+
+  &:hover {
+    transition: 0.3s all ease;
+    opacity: 0.5;
   }
 `;
 
@@ -23,9 +28,9 @@ export const Date = styled(Category)`
   margin: 8px 0;
 `;
 
-export const TitleLink = styled(Link)`
-  transition: all 0.3s ease;
-  &:hover {
-    background-color: ${({ theme }) => theme.palette.lightRed};
-  }
-`;
+// export const TitleLink = styled(Link)`
+//   transition: all 0.3s ease;
+//   &:hover {
+//     background-color: ${({ theme }) => theme.palette.lightRed};
+//   }
+// `;

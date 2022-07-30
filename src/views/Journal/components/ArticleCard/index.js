@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CardWrapper, Date, StyledCardImage, Title, TitleLink } from './style';
+import { Link } from 'react-router-dom';
+import { CardWrapper, Date, StyledCardImage, Title } from './style';
 import { Body } from '../../../../Typography/style';
 
 export default function ArticleCard({
@@ -12,14 +13,14 @@ export default function ArticleCard({
   path
 }) {
   return (
-    <CardWrapper>
-      <StyledCardImage src={image} alt={altText} />
-      <Date>{date}</Date>
-      <Title>
-        <TitleLink to={path}>{title}</TitleLink>
-      </Title>
-      <Body as="p">{intro}</Body>
-    </CardWrapper>
+    <Link to={path}>
+      <CardWrapper>
+        <StyledCardImage src={image} alt={altText} />
+        <Date>{date}</Date>
+        <Title>{title}</Title>
+        <Body as="p">{intro}</Body>
+      </CardWrapper>
+    </Link>
   );
 }
 

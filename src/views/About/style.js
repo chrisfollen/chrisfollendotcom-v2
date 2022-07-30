@@ -42,7 +42,7 @@ export const StyledBreakLine = styled(StyledBreakLineBase)`
   }
 `;
 
-export const ManifestoText = styled(Body)`
+export const ManifestoText = styled(Body).attrs({ as: 'p' })`
   margin-left: 16px;
 `;
 
