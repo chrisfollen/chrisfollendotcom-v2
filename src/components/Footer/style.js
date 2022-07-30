@@ -6,6 +6,9 @@ export const FooterOuterContainer = styled.div`
   padding: 48px 120px;
   margin: 0 auto;
   background-color: ${({ theme }) => theme.palette.lightGrey};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const FooterInnerContainer = styled.div`
