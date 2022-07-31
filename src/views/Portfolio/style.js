@@ -34,15 +34,6 @@ export const StyledBreakLine = styled.div`
   }
 `;
 
-export const StyledBodyLink = styled(Link)`
-  padding: 2px 0;
-  border-bottom: 2px solid ${({ theme }) => theme.palette.red};
-  transition: all 0.3s ease;
-  &:hover {
-    background-color: ${({ theme }) => theme.palette.lightRed};
-  }
-`;
-
 export const StyledBodyExternalLink = styled.a.attrs({
   target: '_blank',
   rel: 'noreferrer'

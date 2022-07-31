@@ -27,10 +27,3 @@ export const Title = styled(Subhead)`
 export const Date = styled(Category)`
   margin: 8px 0;
 `;
-
-// export const TitleLink = styled(Link)`
-//   transition: all 0.3s ease;
-//   &:hover {
-//     background-color: ${({ theme }) => theme.palette.lightRed};
-//   }
-// `;
