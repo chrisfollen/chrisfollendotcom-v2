@@ -6,7 +6,6 @@ import {
   CloseButtonWrapper,
   Photo
 } from './style';
-import { Heading3 } from '../../../../Typography/style';
 
 export default function PhotoModal({
   togglePhotoModal,

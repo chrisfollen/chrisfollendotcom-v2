@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { Body, BodyItalic, Category, Heading2 } from '../../Typography/style';
 
 export const HeadingContainer = styled.div`
