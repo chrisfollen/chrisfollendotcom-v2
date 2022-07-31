@@ -24,23 +24,27 @@ export const content = {
       linkPath: '/photo',
       body2:
         ' and creating tangible records of my experiences via both physical prints and coffee table books.',
-      image: Photography
+      image: Photography,
+      imageAltText: 'grand canyon view at sunrise'
     },
 
     {
       heading: 'surfing',
       body: "It's mindfulness, physical exercise, and time spent in nature all wrapped up in one. It's also hard work for a limited reward and I very much appreciate that aspect.",
-      image: Surfing
+      image: Surfing,
+      imageAltText: 'surfer in encinitas, california'
     },
     {
       heading: 'woodworking',
       body: "Using your hands and tools to shape a piece of wood into (hopefully) something beautiful and functional is at once immensely satisfying and incredibly frustrating. It's a welcome opportunity to confront material reality and feel some agency.",
-      image: Woodworking
+      image: Woodworking,
+      imageAltText: 'trees in glacier national park'
     },
     {
       heading: 'stoicism',
       body: "It's not about what happends to you. It's about how you react to it. Choose wisely.",
-      image: Stoicism
+      image: Stoicism,
+      imageAltText: 'palm trees in california'
     },
     {
       heading: 'reading',
@@ -48,12 +52,14 @@ export const content = {
       linkText: 'here',
       linkPath: '/read',
       body2: '.',
-      image: Reading
+      image: Reading,
+      imageAltText: 'man on beach at sunrise'
     },
     {
       heading: 'architecture',
       body: 'I appreciate thoughtfully-designed spaces, and am particularly intrigued by functional layouts that make efficient use of space and resources.',
-      image: Architecture
+      image: Architecture,
+      imageAltText: 'antelope canyon black and white'
     }
   ]
 };
