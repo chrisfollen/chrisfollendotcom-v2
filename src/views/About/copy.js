@@ -4,6 +4,7 @@ import Surfing from '../../assets/surfing.jpg';
 import Woodworking from '../../assets/woodworking.jpg';
 import Stoicism from '../../assets/stoicism.jpg';
 import Reading from '../../assets/reading.jpg';
+import { PATH_PHOTO, PATH_READING_LIST } from '../../constants/paths';
 
 export const content = {
   pageTitle: 'About - CHRIS FOLLEN',
@@ -21,39 +22,45 @@ export const content = {
       heading: 'photography',
       body: "I truly believe that art has to power to inspire us, to move us, and to bring us together. I'm passionate about ",
       linkText: 'exploring with my camera',
-      linkPath: '/photo',
+      linkPath: PATH_PHOTO,
       body2:
         ' and creating tangible records of my experiences via both physical prints and coffee table books.',
-      image: Photography
+      image: Photography,
+      imageAltText: 'grand canyon view at sunrise'
     },
 
     {
       heading: 'surfing',
       body: "It's mindfulness, physical exercise, and time spent in nature all wrapped up in one. It's also hard work for a limited reward and I very much appreciate that aspect.",
-      image: Surfing
+      image: Surfing,
+      imageAltText: 'surfer in encinitas, california'
     },
     {
       heading: 'woodworking',
       body: "Using your hands and tools to shape a piece of wood into (hopefully) something beautiful and functional is at once immensely satisfying and incredibly frustrating. It's a welcome opportunity to confront material reality and feel some agency.",
-      image: Woodworking
+      image: Woodworking,
+      imageAltText: 'trees in glacier national park'
     },
     {
       heading: 'stoicism',
-      body: "It's not about what happends to you. It's about how you react to it. Choose wisely.",
-      image: Stoicism
+      body: "It's not about what happens to you. It's about how you react to it. Choose wisely.",
+      image: Stoicism,
+      imageAltText: 'palm trees in california'
     },
     {
       heading: 'reading',
       body: "For me, reading is a way to communicate with some of the greatest thinkers who have walked the earth. I've put together a list of some of my favorites books ",
       linkText: 'here',
-      linkPath: '/read',
+      linkPath: PATH_READING_LIST,
       body2: '.',
-      image: Reading
+      image: Reading,
+      imageAltText: 'man on beach at sunrise'
     },
     {
       heading: 'architecture',
       body: 'I appreciate thoughtfully-designed spaces, and am particularly intrigued by functional layouts that make efficient use of space and resources.',
-      image: Architecture
+      image: Architecture,
+      imageAltText: 'antelope canyon black and white'
     }
   ]
 };

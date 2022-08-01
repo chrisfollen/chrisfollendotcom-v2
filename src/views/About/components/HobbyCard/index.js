@@ -5,6 +5,7 @@ import { Body } from '../../../../Typography/style';
 
 export default function HobbyCard({
   image,
+  imageAltText,
   title,
   copy,
   linkText,
@@ -13,7 +14,7 @@ export default function HobbyCard({
 }) {
   return (
     <CardWrapper>
-      <StyledCardImage src={image} />
+      <StyledCardImage src={image} alt={imageAltText} />
       <Title>{title}</Title>
       <Body as="p">
         {copy}
@@ -28,6 +29,7 @@ export default function HobbyCard({
 
 HobbyCard.propTypes = {
   image: PropTypes.string.isRequired,
+  imageAltText: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   copy: PropTypes.string.isRequired,
   linkText: PropTypes.string,

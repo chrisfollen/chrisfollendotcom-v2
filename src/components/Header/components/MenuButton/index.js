@@ -12,11 +12,11 @@ export default function MenuButton({ toggleMenu }) {
   const { pathname } = useLocation();
 
   const menuLightTheme = useMemo(() => {
-    if (pathname === PATH_ROOT) {
+    if (pathname === PATH_ROOT && !isMobile) {
       return true;
     }
     return false;
-  }, [pathname]);
+  }, [pathname, isMobile]);
 
   return (
     <button type="button" aria-label="Menu" onClick={toggleMenu}>

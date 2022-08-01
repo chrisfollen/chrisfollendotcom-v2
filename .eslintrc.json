@@ -20,6 +20,7 @@
     "prettier/prettier": "error",
     "import/prefer-default-export": 0,
     "react/require-default-props": 0,
-    "react/jsx-boolean-values": 0
+    "react/jsx-boolean-values": 0,
+    "react/forbid-prop-types": 0
   }
 }

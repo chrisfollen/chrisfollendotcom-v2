@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { Body, BodyItalic, Category, Heading2 } from '../../Typography/style';
 
 export const HeadingContainer = styled.div`
@@ -31,15 +30,6 @@ export const StyledBreakLine = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     width: calc(100vw - 2 * 24px);
-  }
-`;
-
-export const StyledBodyLink = styled(Link)`
-  padding: 2px 0;
-  border-bottom: 2px solid ${({ theme }) => theme.palette.red};
-  transition: all 0.3s ease;
-  &:hover {
-    background-color: ${({ theme }) => theme.palette.lightRed};
   }
 `;
 

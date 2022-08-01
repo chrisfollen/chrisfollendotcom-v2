@@ -6,7 +6,6 @@ import { content } from './copy';
 import {
   HeadingContainer,
   StyledBreakLine,
-  StyledBodyLink,
   LowSubheader,
   ProjectContainer,
   ProjectHeading,
@@ -84,9 +83,9 @@ export default function Portfolio() {
             <Heading3>{content.lowHeading}</Heading3>
             <LowSubheader>
               {content.lowSubheading}
-              <StyledBodyLink to={EXTERNAL_EMAIL}>
+              <StyledBodyExternalLink href={EXTERNAL_EMAIL}>
                 {content.email}
-              </StyledBodyLink>
+              </StyledBodyExternalLink>
             </LowSubheader>
           </ContactContainer>
         </InnerPageContainer>
