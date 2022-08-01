@@ -107,7 +107,7 @@ export const photos = {
     { photo: Image43, alt: 'boots by lake in glacier national park' },
     { photo: Image45, alt: 'woman sitting near cliff boulder colorado' },
     { photo: Image47, alt: 'palm tree in wind san diego' },
-    { photo: Image49, alt: 'icebreg at sunset in iceland' },
+    { photo: Image49, alt: 'iceberg at sunset in iceland' },
     { photo: Image51, alt: 'man diving into lake glacier national park' },
     { photo: Image53, alt: 'palm trees in hawaii' },
     { photo: Image55, alt: 'road in rear view mirror' },

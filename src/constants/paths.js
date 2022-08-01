@@ -3,7 +3,7 @@ export const PATH_PORTFOLIO = '/portfolio';
 export const PATH_ABOUT = '/about';
 export const PATH_JOURNAL = '/journal';
 export const PATH_PHOTO = '/photo';
-export const PATH_READING_LIST = '/reading-list';
+export const PATH_READING_LIST = '/books';
 
 export const PATH_JOURNAL_30_LESSONS = `${PATH_JOURNAL}/30-lessons`;
 export const PATH_JOURNAL_STOIC_PRACTICES = `${PATH_JOURNAL}/stoic-practices`;
