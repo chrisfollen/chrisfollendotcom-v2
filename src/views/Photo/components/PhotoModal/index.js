@@ -21,13 +21,13 @@ export default function PhotoModal({
       <CloseButtonWrapper>
         <CloseButton onClick={handleCloseButtonClick}>&times;</CloseButton>
       </CloseButtonWrapper>
-      <Photo src={currentPhoto} alt="rad" />
+      <Photo src={currentPhoto.photo} alt={currentPhoto.alt} />
     </PhotoModalContainer>
   );
 }
 
 PhotoModal.propTypes = {
   togglePhotoModal: PropTypes.func.isRequired,
-  currentPhoto: PropTypes.string.isRequired,
+  currentPhoto: PropTypes.object.isRequired,
   modalActive: PropTypes.bool.isRequired
 };

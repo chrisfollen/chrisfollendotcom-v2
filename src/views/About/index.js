@@ -76,6 +76,7 @@ export default function About() {
                 <Grid item key={hobby.heading} sm={4}>
                   <HobbyCard
                     image={hobby.image}
+                    imageAltText={hobby.imageAltText}
                     title={hobby.heading}
                     copy={hobby.body}
                     linkText={hobby.linkText}

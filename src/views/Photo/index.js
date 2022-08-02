@@ -21,7 +21,7 @@ export default function Photo() {
   }, []);
 
   const [modalActive, setModalActive] = useState(false);
-  const [currentPhoto, setCurrentPhoto] = useState(photos.leftColumn[1]);
+  const [currentPhoto, setCurrentPhoto] = useState(photos.leftColumn[0]);
 
   const togglePhotoModal = () => {
     if (modalActive) {
@@ -57,7 +57,7 @@ export default function Photo() {
               <GalleryPhoto
                 onClick={handlePhotoClick}
                 src={photo.photo}
-                key={photo}
+                key={photo.photo}
                 alt={photo.alt}
               />
             ))}
@@ -67,7 +67,7 @@ export default function Photo() {
               <GalleryPhoto
                 onClick={handlePhotoClick}
                 src={photo.photo}
-                key={photo}
+                key={photo.photo}
                 alt={photo.alt}
               />
             ))}
