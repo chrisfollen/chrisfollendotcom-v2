@@ -88,6 +88,11 @@ export const QuoteTextContainer = styled.div`
     right: 24px;
     width: calc(100vw-24px);
   }
+
+  @media (max-height: 700px) {
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
 `;
 
 export const QuoteText = styled(Heading4)`
