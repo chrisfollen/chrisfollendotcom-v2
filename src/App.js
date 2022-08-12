@@ -41,7 +41,7 @@ function App() {
   const [preloaderActive, setPreloaderActive] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setPreloaderActive(false), 5500);
+    setTimeout(() => setPreloaderActive(false), 4000);
     /* eslint-disable-next-line */
   }, []);
 

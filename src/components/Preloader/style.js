@@ -41,45 +41,45 @@ export const PreloadText = styled(Heading3)`
 `;
 
 export const Letter1 = styled.span`
-  animation: ${letterAnimation} 2s ease 0.2s;
+  animation: ${letterAnimation} 1.5s ease 0.2s;
 `;
 
 export const Letter2 = styled.span`
-  animation: ${letterAnimation} 2s ease 0.4s;
+  animation: ${letterAnimation} 1.5s ease 0.4s;
 `;
 
 export const Letter3 = styled.span`
-  animation: ${letterAnimation} 2s ease 0.6s;
+  animation: ${letterAnimation} 1.5s ease 0.6s;
 `;
 
 export const Letter4 = styled.span`
-  animation: ${letterAnimation} 2s ease 0.8s;
+  animation: ${letterAnimation} 1.5s ease 0.8s;
 `;
 
 export const Letter5 = styled.span`
-  animation: ${letterAnimation} 2s ease 1s;
+  animation: ${letterAnimation} 1.5s ease 1s;
 `;
 
 export const Letter6 = styled.span`
-  animation: ${letterAnimation} 2s ease 1.2s;
+  animation: ${letterAnimation} 1.5s ease 1.2s;
 `;
 
 export const Letter7 = styled.span`
-  animation: ${letterAnimation} 2s ease 1.4s;
+  animation: ${letterAnimation} 1.5s ease 1.4s;
 `;
 
 export const Letter8 = styled.span`
-  animation: ${letterAnimation} 2s ease 1.6s;
+  animation: ${letterAnimation} 1.5s ease 1.6s;
 `;
 
 export const Letter9 = styled.span`
-  animation: l ${letterAnimation} 2s ease 1.8s;
+  animation: l ${letterAnimation} 1.5s ease 1.8s;
 `;
 
 export const Letter10 = styled.span`
-  animation: ${letterAnimation} 2s ease 2s;
+  animation: ${letterAnimation} 1.5s ease 2s;
 `;
 
 export const Letter11 = styled.span`
-  animation: ${letterAnimation} 2s ease 2.2s;
+  animation: ${letterAnimation} 1.5s ease 2.2s;
 `;
