@@ -44,6 +44,9 @@ export const StyledBreakLine = styled(StyledBreakLineBase)`
 
 export const ManifestoText = styled(Body).attrs({ as: 'p' })`
   margin-left: 16px;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+  max-width: 220px;
 `;
 
 export const HeroImageWrapper = styled.div`

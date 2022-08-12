@@ -18,7 +18,8 @@ import {
   ContactContainer,
   ProjectHeadingRight,
   ProjectContainerRight,
-  StyledBodyExternalLink
+  StyledBodyExternalLink,
+  ProjectDescriptionLeft
 } from './style';
 
 import HomepageImage from '../../assets/home.jpg';
@@ -46,9 +47,9 @@ export default function Portfolio() {
               <ProjectHeading>{content.portfolio.homeward.name}</ProjectHeading>
               <ProjectBreakLine />
               <ProjectTitle>{content.portfolio.homeward.title}</ProjectTitle>
-              <ProjectDescription>
+              <ProjectDescriptionLeft>
                 {content.portfolio.homeward.description}
-              </ProjectDescription>
+              </ProjectDescriptionLeft>
             </ProjectTextContainer>
             <ProjectImageContainer>
               <StyledImage src={Homeward} />

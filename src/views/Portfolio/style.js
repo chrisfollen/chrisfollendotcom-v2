@@ -108,6 +108,14 @@ export const ProjectDescription = styled(Body).attrs({ as: 'p' })`
   margin-left: 24px;
 `;
 
+export const ProjectDescriptionLeft = styled(Body).attrs({ as: 'p' })`
+  margin-left: 24px;
+  margin-right: 16px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    margin-right: 0;
+  }
+`;
+
 export const ProjectImageContainer = styled.div`
   width: 75%;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
