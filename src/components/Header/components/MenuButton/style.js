@@ -21,4 +21,8 @@ export const MenuTextLines = styled(Body)`
   letter-spacing: 3px;
   font-weight: bold;
   padding-left: 6px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding-left: 0;
+  }
 `;
