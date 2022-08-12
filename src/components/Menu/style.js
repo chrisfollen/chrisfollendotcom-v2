@@ -25,7 +25,7 @@ export const MenuContainer = styled.nav`
 
 export const MenuColumnBase = styled.div`
   flex-grow: 1;
-  transition: transform 0.8s ease;
+  transition: transform 0.6s ease;
 `;
 
 export const MenuLeftColumn = styled(MenuColumnBase)`

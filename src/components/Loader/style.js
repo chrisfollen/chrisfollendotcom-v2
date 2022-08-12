@@ -26,6 +26,6 @@ export const Loader = styled.div`
   justify-content: center;
   transition: all 1s linear;
   background-color: ${({ theme }) => theme.palette.white};
-  animation: ${fadeOut} 2s ease;
+  animation: ${fadeOut} 1s ease;
   animation-fill-mode: forwards;
 `;
