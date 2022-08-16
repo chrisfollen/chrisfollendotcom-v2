@@ -73,7 +73,7 @@ export const Letter8 = styled.span`
 `;
 
 export const Letter9 = styled.span`
-  animation: l ${letterAnimation} 1.5s ease 1.8s;
+  animation: ${letterAnimation} 1.5s ease 1.8s;
 `;
 
 export const Letter10 = styled.span`
