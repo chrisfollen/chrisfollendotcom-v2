@@ -16,12 +16,14 @@ export default function PhotoModal({
     togglePhotoModal();
   };
 
+  console.log(currentPhoto);
+
   return (
     <PhotoModalContainer modalActive={modalActive}>
       <CloseButtonWrapper>
         <CloseButton onClick={handleCloseButtonClick}>&times;</CloseButton>
       </CloseButtonWrapper>
-      <Photo src={currentPhoto.photo} alt={currentPhoto.alt} />
+      <Photo src={currentPhoto.src} alt={currentPhoto.alt} />
     </PhotoModalContainer>
   );
 }

@@ -32,8 +32,8 @@ export default function Photo() {
   };
 
   const handlePhotoClick = (event) => {
-    const photoURL = event.target.src;
-    setCurrentPhoto(photoURL);
+    const clickedPhoto = event.target;
+    setCurrentPhoto(clickedPhoto);
     togglePhotoModal();
   };
 
