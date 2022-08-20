@@ -16,8 +16,6 @@ export default function PhotoModal({
     togglePhotoModal();
   };
 
-  console.log(currentPhoto);
-
   return (
     <PhotoModalContainer modalActive={modalActive}>
       <CloseButtonWrapper>
