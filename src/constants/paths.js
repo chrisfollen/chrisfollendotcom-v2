@@ -11,3 +11,4 @@ export const PATH_JOURNAL_PHILOSOPHY_BOOKS = `${PATH_JOURNAL}/philosophy-books`;
 export const PATH_JOURNAL_SUCCEED_IN_BOOTCAMP = `${PATH_JOURNAL}/succeed-in-bootcamp`;
 export const PATH_JOURNAL_DESIGN_FOR_DEVS = `${PATH_JOURNAL}/design-for-devs`;
 export const PATH_JOURNAL_BOOTCAMP_TAKEAWAYS = `${PATH_JOURNAL}/bootcamp-takeaways`;
+export const PATH_JOURNAL_35_LESSONS = `${PATH_JOURNAL}/35-lessons`;
