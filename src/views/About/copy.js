@@ -15,7 +15,7 @@ export const content = {
   quoteAuthor: 'leonardo da vinci',
   aboutMeHeading: "I'm Chris",
   aboutMe:
-    "I’m so glad you found your way to my website, and I hope my work puts a smile on your face. \n I'm a frontend developer and freelance photographer based in Boulder, Colorado. I like thinking, creating, problem solving, and learning. I’m passionate about everything I do, and am particularly intrigued by work that marries an aesthetic component with a technical one.",
+    "I’m so glad you found your way to my website, and I hope my work puts a smile on your face. \n I'm a frontend developer and freelance photographer based in Portland, Maine. I like thinking, creating, problem solving, and learning. I’m passionate about everything I do, and am particularly intrigued by work that marries an aesthetic component with a technical one.",
   hobbiesAndInterestsHeader: 'Hobbies & interests',
   hobbiesAndInterests: [
     {

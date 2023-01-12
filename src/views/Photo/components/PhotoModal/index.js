@@ -21,7 +21,7 @@ export default function PhotoModal({
       <CloseButtonWrapper>
         <CloseButton onClick={handleCloseButtonClick}>&times;</CloseButton>
       </CloseButtonWrapper>
-      <Photo src={currentPhoto.photo} alt={currentPhoto.alt} />
+      <Photo src={currentPhoto.src} alt={currentPhoto.alt} />
     </PhotoModalContainer>
   );
 }

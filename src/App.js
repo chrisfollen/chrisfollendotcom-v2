@@ -11,6 +11,7 @@ import {
   PATH_ABOUT,
   PATH_JOURNAL,
   PATH_JOURNAL_30_LESSONS,
+  PATH_JOURNAL_35_LESSONS,
   PATH_JOURNAL_BOOTCAMP_TAKEAWAYS,
   PATH_JOURNAL_DESIGN_FOR_DEVS,
   PATH_JOURNAL_PHILOSOPHY_BOOKS,
@@ -35,6 +36,7 @@ import BootcampTakeaways from './views/Journal/Articles/BootcampTakeaways';
 import Journal from './views/Journal';
 import Photo from './views/Photo';
 import Books from './views/Books';
+import ThirtyFiveLessons from './views/Journal/Articles/35';
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -95,6 +97,11 @@ function App() {
               path={PATH_JOURNAL_BOOTCAMP_TAKEAWAYS}
               exact
               element={<BootcampTakeaways />}
+            />
+            <Route
+              path={PATH_JOURNAL_35_LESSONS}
+              exact
+              element={<ThirtyFiveLessons />}
             />
             <Route path={PATH_PHOTO} exact element={<Photo />} />
             <Route path={PATH_READING_LIST} exact element={<Books />} />
