@@ -3,15 +3,20 @@ export const content = {
   name: 'Chris Follen',
   about: 'Frontend software engineer',
   summary:
-    'Innovative, task-driven, taco-eating, goal-oriented, aesthetically-inclined, frontend software engineer with professional experience in project management and business development.  Possesses a record of professional successes attributable to his creativity and problem solving abilities coupled with his strong work ethic and focused commitment to producing high-quality results.',
+    'Innovative, task-driven, taco-eating, goal-oriented, aesthetically-inclined, frontend software engineer and Scrum Master.  Possesses a record of professional successes attributable to his creativity and problem solving abilities, coupled with his strong work ethic and focused commitment to producing high-quality results.   ',
   experienceHeading: 'Experience',
   experiences: [
     {
+      company: 'Fishbowl Inventory',
+      role: 'Software engineer II, Scrum Master',
+      years: ' 09/22 - present'
+    },
+    {
       company: 'Homeward',
-      role: 'Software engineer, frontend',
-      years: '2022 - present',
-      role2: 'Associate software engineer, frontend',
-      years2: '2021 - 2022'
+      role: 'Software engineer (frontend)',
+      years: '02/22 - 08/22',
+      role2: 'Associate software engineer (frontend)',
+      years2: '05/21 - 02/22'
     },
     {
       company: 'Chris Follen Photography',
@@ -52,6 +57,5 @@ export const content = {
     }
   ],
   skillsHeading: 'Skills',
-  skills:
-    'react.js, javascript, redux, rtk, git, segment.io, jest, cypress, node.js, express.js, figma, sql, jira, notion'
+  skills: 'react, javascript, typescript, redux, rtl, git, segment.io, cypress'
 };

@@ -24,6 +24,7 @@ import {
 
 import HomepageImage from '../../assets/home.jpg';
 import Homeward from '../../assets/homeward.jpg';
+import Fishbowl from '../../assets/fishbowl.jpg';
 
 import { Heading3 } from '../../Typography/style';
 
@@ -42,6 +43,21 @@ export default function Portfolio() {
           <Heading3 as="h2">{content.heading}</Heading3>
         </HeadingContainer>
         <InnerPageContainer>
+          <ProjectContainerRight>
+            <ProjectImageContainer>
+              <StyledImage src={Fishbowl} />
+            </ProjectImageContainer>
+            <ProjectTextContainer>
+              <ProjectHeadingRight>
+                {content.portfolio.fishbowl.name}
+              </ProjectHeadingRight>
+              <ProjectBreakLine />
+              <ProjectTitle>{content.portfolio.fishbowl.title}</ProjectTitle>
+              <ProjectDescription>
+                {content.portfolio.fishbowl.description}
+              </ProjectDescription>
+            </ProjectTextContainer>
+          </ProjectContainerRight>
           <ProjectContainer>
             <ProjectTextContainer>
               <ProjectHeading>{content.portfolio.homeward.name}</ProjectHeading>
