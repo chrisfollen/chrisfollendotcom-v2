@@ -17,6 +17,7 @@ import {
   PATH_JOURNAL_PHILOSOPHY_BOOKS,
   PATH_JOURNAL_STOIC_PRACTICES,
   PATH_JOURNAL_SUCCEED_IN_BOOTCAMP,
+  PATH_KIDS_BOOKS,
   PATH_PHOTO,
   PATH_PORTFOLIO,
   PATH_READING_LIST,
@@ -37,6 +38,7 @@ import Journal from './views/Journal';
 import Photo from './views/Photo';
 import Books from './views/Books';
 import ThirtyFiveLessons from './views/Journal/Articles/35';
+import Kid from './views/Kid';
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -105,6 +107,7 @@ function App() {
             />
             <Route path={PATH_PHOTO} exact element={<Photo />} />
             <Route path={PATH_READING_LIST} exact element={<Books />} />
+            <Route path={PATH_KIDS_BOOKS} exact element={<Kid />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>

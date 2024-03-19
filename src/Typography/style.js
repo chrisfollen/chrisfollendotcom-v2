@@ -94,5 +94,5 @@ export const BodyBold = styled.span`
 export const BodyBoldItalic = styled.span`
   ${bodyBase};
   font-style: italic;
-  font-weight: bold;
+  font-weight: 600;
 `;
