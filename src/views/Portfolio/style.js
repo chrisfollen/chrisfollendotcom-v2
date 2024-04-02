@@ -35,7 +35,7 @@ export const StyledBreakLine = styled.div`
 
 export const StyledBodyExternalLink = styled.a.attrs({
   target: '_blank',
-  rel: 'noreferrer'
+  rel: 'noopener noreferrer'
 })`
   padding: 2px 0;
   border-bottom: 2px solid ${({ theme }) => theme.palette.red};

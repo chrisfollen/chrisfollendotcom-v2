@@ -7,6 +7,7 @@ import {
   Author,
   Description,
   DescriptionEmphasized,
+  DescriptionItalic,
   Heading,
   InnerContainer,
   StyledBookList,

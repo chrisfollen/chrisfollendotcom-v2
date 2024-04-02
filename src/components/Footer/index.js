@@ -30,13 +30,13 @@ export default function Footer() {
           }}
         />
         <ExternalLinksContainer>
-          <a href={EXTERNAL_EMAIL} target="_blank" rel="noreferrer">
+          <a href={EXTERNAL_EMAIL} target="_blank" rel="noopener noreferrer">
             <ExternalLink src={emailIcon} alt="Email icon" />
           </a>
-          <a href={EXTERNAL_LINKEDIN} target="_blank" rel="noreferrer">
+          <a href={EXTERNAL_LINKEDIN} target="_blank" rel="noopener noreferrer">
             <ExternalLink src={linkedinIcon} alt="LinkedIn logo" />
           </a>
-          <a href={EXTERNAL_GITHUB} target="_blank" rel="noreferrer">
+          <a href={EXTERNAL_GITHUB} target="_blank" rel="noopener noreferrer">
             <ExternalLink src={githubIcon} alt="GitHub logo" />
           </a>
         </ExternalLinksContainer>

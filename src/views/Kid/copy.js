@@ -1,19 +1,50 @@
 export const content = {
   pageTitle: "Kid's Books - CHRIS FOLLEN",
-  heading: 'our not-registry',
+  heading: 'our registry(ish)',
   description:
-    "We truly don't need anything, but if you insist or feel so inclined, you are more than welcome to get us a children's book you think our son would appreciate.  ",
+    "We appreciate your kindness in thinking of getting a baby gift for our little one. While we're aiming for a minimalist approach when it comes to baby gear, clothes, and toys, most of you know that that’s not the case for us when it comes to books. We truly don’t need anything, but if you feel compelled to gift something, we'd be thrilled to receive a children's book (or two!) that you think our son would enjoy.  ",
   description2: 'Below is a list of the books we already have.  ',
   description3:
-    'We will keep this list up to date, so feel free to send anything not listed here.  Thanks very much!',
+    'We will keep this list up to date, so feel free to send anything not listed here.  Thank you very much!',
+  description4: 'If you need a place to shop for books, we love to support our',
+  description5: 'local bookstore.',
+  description6: '  :)',
   books: [
+    {
+      title: 'Goodnight Moon',
+      author: 'Margaret Wise Brown'
+    },
     {
       title: 'The Boy Who Spoke to the Earth',
       author: 'Chris Burkard'
     },
     {
+      title: 'The Very Hungry Caterpillar’s Rainbow Colors',
+      author: 'Eric Carle'
+    },
+    {
+      title: 'Because Your Daddy Loves You',
+      author: 'Andrew Clements'
+    },
+    {
+      title: 'Goodnight Maine',
+      author: 'Adam Gamble & Suwin Chan'
+    },
+    {
       title: 'The Boy Who Would Be King',
       author: 'Ryan Holiday'
+    },
+    {
+      title: 'Guess How Much I Love You',
+      author: 'Sam McBratney'
+    },
+    {
+      title: 'Mama Loves You So',
+      author: 'Terry Pierce'
+    },
+    {
+      title: 'The Big Orange Splot',
+      author: 'Daniel Pinkwater'
     },
     {
       title: 'Alphabet of Waves',
@@ -24,7 +55,7 @@ export const content = {
       author: 'Ryan Russell'
     },
     {
-      title: 'Marvin K. Mooney Will You PLease Go Now',
+      title: 'Marvin K. Mooney Will You Please Go Now',
       author: 'Dr. Seuss'
     }
   ]
