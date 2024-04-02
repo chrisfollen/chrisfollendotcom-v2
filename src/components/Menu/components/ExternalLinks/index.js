@@ -26,19 +26,19 @@ export default function ExternalLinks({ menuActive }) {
   return (
     <ExternalLinksOuterContainer menuActive={menuActive}>
       <ExternalLinksInnerContainer isMobile={isMobile}>
-        <a href={EXTERNAL_EMAIL} target="_blank" rel="noreferrer">
+        <a href={EXTERNAL_EMAIL} target="_blank" rel="noopener noreferrer">
           <ExternalLink
             src={isMobile ? emailDarkIcon : emailIcon}
             alt="Email icon"
           />
         </a>
-        <a href={EXTERNAL_LINKEDIN} target="_blank" rel="noreferrer">
+        <a href={EXTERNAL_LINKEDIN} target="_blank" rel="noopener noreferrer">
           <ExternalLink
             src={isMobile ? linkedinDarkIcon : linkedinIcon}
             alt="LinkedIn logo"
           />
         </a>
-        <a href={EXTERNAL_GITHUB} target="_blank" rel="noreferrer">
+        <a href={EXTERNAL_GITHUB} target="_blank" rel="noopener noreferrer">
           <ExternalLink
             src={isMobile ? githubDarkIcon : githubIcon}
             alt="GitHub logo"
