@@ -11,12 +11,20 @@ export const content = {
   description6: '  :)',
   books: [
     {
+      title: 'The Beach',
+      author: 'Ximo Abadia'
+    },
+    {
       title: 'Goodnight Moon',
       author: 'Margaret Wise Brown'
     },
     {
       title: 'The Boy Who Spoke to the Earth',
       author: 'Chris Burkard'
+    },
+    {
+      title: 'The Very Hungry Caterpillar',
+      author: 'Eric Carle'
     },
     {
       title: 'The Very Hungry Caterpillar’s Rainbow Colors',
@@ -27,11 +35,19 @@ export const content = {
       author: 'Andrew Clements'
     },
     {
+      title: 'Fish Alphabet',
+      author: 'Beck Feiner'
+    },
+    {
       title: 'Goodnight Maine',
       author: 'Adam Gamble & Suwin Chan'
     },
     {
       title: 'The Boy Who Would Be King',
+      author: 'Ryan Holiday'
+    },
+    {
+      title: 'The Girl Who Would Be Free',
       author: 'Ryan Holiday'
     },
     {
@@ -57,6 +73,22 @@ export const content = {
     {
       title: 'Marvin K. Mooney Will You Please Go Now',
       author: 'Dr. Seuss'
+    },
+    {
+      title: 'National Parks of the USA',
+      author: 'Kate Siber'
+    },
+    {
+      title: 'Press Here',
+      author: 'Herve Tullet'
+    },
+    {
+      title: 'Salty Sleepy Surfery Rhymes',
+      author: 'Joe Vickers'
+    },
+    {
+      title: 'Surfer Baby',
+      author: 'Joe Vickers'
     }
   ]
 };

@@ -25,7 +25,7 @@ export const ResumeTitle = styled(Category)`
 
 export const VerticalLine = styled.div`
   border-left: 1px solid ${({ theme }) => theme.palette.red};
-  height: 900px;
+  height: 960px;
   margin: 0 32px 0 16px;
 `;
 

@@ -8,8 +8,10 @@ export const content = {
   experiences: [
     {
       company: 'Fishbowl Inventory',
-      role: 'Software engineer II, Scrum Master',
-      years: ' 09/22 - present'
+      role: 'Senior software engineer, Scrum Master',
+      years: ' 04/24 - present',
+      role2: 'Software engineer II, Scrum Master',
+      years2: ' 09/22 - 04/24'
     },
     {
       company: 'Homeward',
