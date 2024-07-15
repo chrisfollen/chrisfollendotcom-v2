@@ -15,6 +15,14 @@ export const content = {
       author: 'Ximo Abadia'
     },
     {
+      title: "Giraffes Can't Dance",
+      author: 'Giles Andreae & Guy Parker-Rees'
+    },
+    {
+      title: 'The Mitten',
+      author: 'Jan Brett'
+    },
+    {
       title: 'Goodnight Moon',
       author: 'Margaret Wise Brown'
     },
@@ -35,12 +43,24 @@ export const content = {
       author: 'Andrew Clements'
     },
     {
+      title: 'Freight Train',
+      author: 'Donald Crews'
+    },
+    {
       title: 'Fish Alphabet',
       author: 'Beck Feiner'
     },
     {
+      title: 'Corduroy',
+      author: 'Don Freeman'
+    },
+    {
       title: 'Goodnight Maine',
       author: 'Adam Gamble & Suwin Chan'
+    },
+    {
+      title: "Don't Worry, Little Crab",
+      author: 'Chris Haughton'
     },
     {
       title: 'The Boy Who Would Be King',
@@ -49,6 +69,10 @@ export const content = {
     {
       title: 'The Girl Who Would Be Free',
       author: 'Ryan Holiday'
+    },
+    {
+      title: 'Brown Bear, Brown Bear, What Do You See?',
+      author: 'Bill Martin Jr & Eric Carle'
     },
     {
       title: 'Guess How Much I Love You',
@@ -67,8 +91,16 @@ export const content = {
       author: 'Scott Proctor & Rick Albano'
     },
     {
+      title: 'Good night, Gorilla',
+      author: 'Peggy Rathmann'
+    },
+    {
       title: 'My Annoying, Irritating, Always-in-the-way Shadow',
       author: 'Ryan Russell'
+    },
+    {
+      title: 'Little Blue Truck',
+      author: 'Alice Schertle'
     },
     {
       title: 'Marvin K. Mooney Will You Please Go Now',
