@@ -3,7 +3,7 @@ export const content = {
   name: 'Chris Follen',
   about: 'Frontend software engineer',
   summary:
-    'Innovative, task-driven, taco-eating, goal-oriented, aesthetically-inclined, frontend software engineer and Scrum Master.  Possesses a record of professional successes attributable to his creativity and problem solving abilities, coupled with his strong work ethic and focused commitment to producing high-quality results.   ',
+    'Innovative and results-oriented Senior Frontend Software Engineer with expertise in ReactJS and Typescript.  Possesses a strong track record of driving successful projects attributable to creativity and problem solving abilities, coupled with strong work ethic and focused commitment to producing high-quality results.  Certified and experienced Scrum Master.  Bachelor’s and Master’s degrees in Structural Engineering.  Proven ability to collaborate effectively on cross-functional teams to deliver robust, maintainable, user-focused software solutions.',
   experienceHeading: 'Experience',
   experiences: [
     {
@@ -59,5 +59,5 @@ export const content = {
     }
   ],
   skillsHeading: 'Skills',
-  skills: 'react, javascript, typescript, redux, rtl, git, segment.io, cypress'
+  skills: 'react, typescript, javascript, jest, redux, git, cypress'
 };

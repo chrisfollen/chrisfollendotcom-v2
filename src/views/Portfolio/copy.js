@@ -4,9 +4,9 @@ export const content = {
   portfolio: {
     fishbowl: {
       name: 'fishbowl',
-      title: 'software engineer ii & scrum master',
+      title: 'senior software engineer & scrum master',
       description:
-        "I work on the frontend team of the Fishbowl warehouse inventory SaSS application. I've led technical design and implementation of initiatives including integrating an e-commerce app the company acquired.  In addition, I am the team scrum master and have created and implemented our team PR review standards, definition of done, sprint schedule and protocols and I facilitate all standard scrum events."
+        "I work on the frontend team of the Fishbowl warehouse inventory Saas application. I've led technical design and implementation of initiatives including integrating an e-commerce app the company acquired and creating an invoices module.  In addition, I am the team scrum master and have created and implemented our team PR review standards, definition of done, sprint schedule and protocols and I facilitate all standard scrum events."
     },
     homeward: {
       name: 'homeward',
